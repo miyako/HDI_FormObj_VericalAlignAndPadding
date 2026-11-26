@@ -22,22 +22,6 @@
 				<source>Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</source>
 				<target>Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</target>
 			</trans-unit>
-			<trans-unit id="ErrorViewProMain" resname="ErrorViewProMain">
-				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature.</source>
-				<target>Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature.</target>
-			</trans-unit>
-			<trans-unit id="ErrorViewProSub" resname="ErrorViewProSub">
-				<source>You must have a valid 4D View Pro license to continue.</source>
-				<target>You must have a valid 4D View Pro license to continue.</target>
-			</trans-unit>
-			<trans-unit id="ErrorWriteProMain" resname="ErrorWriteProMain">
-				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature.</source>
-				<target>Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature.</target>
-			</trans-unit>
-			<trans-unit id="ErrorWriteProSub" resname="ErrorWriteProSub">
-				<source>You must have a valid 4D Write Pro license to continue.</source>
-				<target>You must have a valid 4D Write Pro license to continue.</target>
-			</trans-unit>
 		</body>
 	</file>
 </xliff>

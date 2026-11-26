@@ -27,8 +27,6 @@ If (Count parameters=0)
 Else 
 	
 	SET MENU BAR(1)
-	$window:=Open form window("HDI"; Plain form window; Horizontally centered; Vertically centered)
-	SET WINDOW TITLE($title; $window)
 	
 	var $options : Object
 	$options:=New object
@@ -38,8 +36,20 @@ Else
 	$options.info:=Localized string("HDI_Info")
 	$options.minimumVersion:="2150"  // 2150 = 21 R5
 	
-	// $options.license:=4D View license  // IF ANY NEEDED
-	
-	DIALOG("HDI"; $options; *)
+	If (Application version<$options.minimumVersion)
+		
+		// too old: show the splash as the version gate (Close button)
+		$window:=Open form window("HDI"; Plain form window; Horizontally centered; Vertically centered)
+		SET WINDOW TITLE($title; $window)
+		DIALOG("HDI"; $options; *)
+		
+	Else 
+		
+		// open the demo directly
+		$window:=Open form window("HDI2"; Plain form window; Horizontally centered; Vertically centered)
+		SET WINDOW TITLE($title; $window)
+		DIALOG("HDI2"; *)
+		
+	End if 
 	
 End if 

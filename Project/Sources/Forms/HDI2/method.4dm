@@ -31,10 +31,6 @@ Case of
 		vtInputVAlignIsBottom:=False:C215
 		
 	: (Form event code:C388=On Close Box:K2:21)
-		If (Is Windows:C1573 && Application info:C1599().SDIMode)
-			INVOKE ACTION(ak return to design mode)
-		Else 
-			CANCEL:C270
-		End if 
+		INVOKE ACTION(ak return to design mode)
 		
 End case 

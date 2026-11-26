@@ -22,22 +22,6 @@
 				<source>Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</source>
 				<target>このバージョンでこの HDI をデザインモードで開かないでください。開くと、機能が不足しているため、フォームやメソッドが変更される恐れがあります。</target>
 			</trans-unit>
-			<trans-unit id="ErrorViewProMain" resname="ErrorViewProMain">
-				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature.</source>
-				<target>申し訳ありませんが、この「How do I」(HDI) 例は 4D View Pro 機能のデモです。</target>
-			</trans-unit>
-			<trans-unit id="ErrorViewProSub" resname="ErrorViewProSub">
-				<source>You must have a valid 4D View Pro license to continue.</source>
-				<target>続行するには有効な 4D View Pro ライセンスが必要です。</target>
-			</trans-unit>
-			<trans-unit id="ErrorWriteProMain" resname="ErrorWriteProMain">
-				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature.</source>
-				<target>申し訳ありませんが、この「How do I」(HDI) 例は 4D Write Pro 機能のデモです。</target>
-			</trans-unit>
-			<trans-unit id="ErrorWriteProSub" resname="ErrorWriteProSub">
-				<source>You must have a valid 4D Write Pro license to continue.</source>
-				<target>続行するには有効な 4D Write Pro ライセンスが必要です。</target>
-			</trans-unit>
 		</body>
 	</file>
 </xliff>
