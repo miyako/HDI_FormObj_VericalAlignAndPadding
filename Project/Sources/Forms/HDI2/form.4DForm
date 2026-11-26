@@ -1590,7 +1590,7 @@
 					"multiline": "no",
 					"fontWeight": "bold"
 				},
-				"InputSearchBtn2": {
+				"InputSearchBtn": {
 					"type": "button",
 					"top": 273,
 					"left": 529,
@@ -1600,7 +1600,7 @@
 					"tooltip": "Search",
 					"icon": "/RESOURCES/Images/Icons/search.png",
 					"iconFrames": 1,
-					"method": "ObjectMethods/InputSearchBtn2.4dm",
+					"method": "ObjectMethods/InputSearchBtn.4dm",
 					"events": [
 						"onClick"
 					],
