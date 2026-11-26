@@ -1,0 +1,366 @@
+/*
+	HDI_FormObj_VericalAlignAndPadding — shared stylesheet (all platforms)
+
+	Brand colours and typography live here; per-theme control heights live
+	in styleSheets_mac.css (Liquid Glass / mac-classic) and
+	styleSheets_windows.css (Fluent UI / win-classic).
+
+	Every custom colour has a dark-mode pair. Values left in a .4DForm
+	override these rules, so the form JSON carries no fill/stroke/font
+	values for classed objects.
+*/
+
+/* ---- accent palette (light / dark) ----
+	green  #459E63 / #5CBF80   panel #F8FCF7 / #1E3328
+	blue   #247CD3 / #5C9CE6   panel #F4F9FE / #1B2C40
+	purple #9F7BD9 / #B79BE0   panel #F9F7FB / #2A2438
+	orange #FFA23D / #FFB366   panel #FCF9F6 / #3A2E1F
+	muted text #696969 / #A0A0A0
+	page title #424242 / #E0E0E0
+	link #1E90FF / #6CB4FF
+*/
+
+/* ---- typography ---- */
+
+.page-title {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.page-title-sm {
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.card-title-green,
+.card-title-blue,
+.card-title-purple,
+.card-title-orange {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.card-desc {
+	font-size: 13px;
+}
+
+.section-title-green,
+.section-title-blue {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.badge-number {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.align-label-green,
+.align-label-blue,
+.ruler-label {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.ruler-label {
+	font-size: 11px;
+}
+
+/* ---- cards: shadow rectangle + panel rectangle ---- */
+
+.card-green,
+.card-blue,
+.card-purple,
+.card-orange {
+	border-radius: 20;
+}
+
+.panel-green,
+.panel-blue,
+.panel-purple,
+.panel-orange {
+	border-radius: 15;
+}
+
+/* ---- badges: coloured oval/rectangle with a white number ---- */
+
+.badge-green,
+.badge-blue,
+.badge-purple,
+.badge-orange {
+	border-radius: 39;
+}
+
+/* ---- inputs ---- */
+
+.sample-text {
+	font-size: 13px;
+	border-style: solid;
+	border-radius: 6;
+}
+
+.value-green,
+.value-blue {
+	font-size: 11px;
+	text-align: center;
+	border-style: solid;
+	border-radius: 4;
+}
+
+.input-hero {
+	font-size: 13px;
+	font-weight: bold;
+	border-style: solid;
+	border-radius: 20;
+}
+
+/* ---- light scheme ---- */
+
+@media (prefers-color-scheme: light) {
+
+	.page-title,
+	.page-title-sm {
+		stroke: #424242;
+	}
+
+	.card-title-green,
+	.section-title-green,
+	.align-label-green {
+		stroke: #459E63;
+	}
+
+	.card-title-blue,
+	.section-title-blue,
+	.align-label-blue {
+		stroke: #247CD3;
+	}
+
+	.card-title-purple {
+		stroke: #9F7BD9;
+	}
+
+	.card-title-orange {
+		stroke: #FFA23D;
+	}
+
+	.card-green,
+	.badge-green {
+		fill: #459E63;
+	}
+
+	.card-blue,
+	.badge-blue {
+		fill: #247CD3;
+	}
+
+	.card-purple,
+	.badge-purple {
+		fill: #9F7BD9;
+	}
+
+	.card-orange,
+	.badge-orange {
+		fill: #FFA23D;
+	}
+
+	.panel-green,
+	.sample-text {
+		fill: #F8FCF7;
+	}
+
+	.panel-blue,
+	.value-blue {
+		fill: #F4F9FE;
+	}
+
+	.panel-purple {
+		fill: #F9F7FB;
+	}
+
+	.panel-orange {
+		fill: #FCF9F6;
+	}
+
+	.value-green {
+		fill: #F8FCF7;
+	}
+
+	.card-green,
+	.panel-green,
+	.card-blue,
+	.panel-blue,
+	.card-purple,
+	.panel-purple,
+	.card-orange,
+	.panel-orange,
+	.badge-green,
+	.badge-blue,
+	.badge-purple,
+	.badge-orange {
+		stroke: transparent;
+	}
+
+	.panel-green,
+	.value-green,
+	.sample-text {
+		stroke: #459E63;
+	}
+
+	.panel-blue,
+	.value-blue,
+	.input-hero {
+		stroke: #247CD3;
+	}
+
+	.panel-purple {
+		stroke: #9F7BD9;
+	}
+
+	.panel-orange {
+		stroke: #FFA23D;
+	}
+
+	.badge-number {
+		stroke: #FFFFFF;
+	}
+
+	.hdi-muted,
+	.ruler-label {
+		stroke: #696969;
+	}
+
+	.hdi-link {
+		stroke: #1E90FF;
+	}
+
+	.separator-green {
+		stroke: #459E63;
+	}
+
+	.separator-blue {
+		stroke: #247CD3;
+	}
+
+	.splash-backdrop {
+		fill: #C0C0C0;
+	}
+}
+
+/* ---- dark scheme ---- */
+
+@media (prefers-color-scheme: dark) {
+
+	.page-title,
+	.page-title-sm {
+		stroke: #E0E0E0;
+	}
+
+	.card-title-green,
+	.section-title-green,
+	.align-label-green {
+		stroke: #5CBF80;
+	}
+
+	.card-title-blue,
+	.section-title-blue,
+	.align-label-blue {
+		stroke: #5C9CE6;
+	}
+
+	.card-title-purple {
+		stroke: #B79BE0;
+	}
+
+	.card-title-orange {
+		stroke: #FFB366;
+	}
+
+	.card-green,
+	.badge-green {
+		fill: #5CBF80;
+	}
+
+	.card-blue,
+	.badge-blue {
+		fill: #5C9CE6;
+	}
+
+	.card-purple,
+	.badge-purple {
+		fill: #B79BE0;
+	}
+
+	.card-orange,
+	.badge-orange {
+		fill: #FFB366;
+	}
+
+	.panel-green,
+	.value-green,
+	.sample-text {
+		fill: #1E3328;
+	}
+
+	.panel-blue,
+	.value-blue,
+	.input-hero {
+		fill: #1B2C40;
+	}
+
+	.panel-purple {
+		fill: #2A2438;
+	}
+
+	.panel-orange {
+		fill: #3A2E1F;
+	}
+
+	.panel-green,
+	.value-green,
+	.sample-text {
+		stroke: #5CBF80;
+	}
+
+	.panel-blue,
+	.value-blue,
+	.input-hero {
+		stroke: #5C9CE6;
+	}
+
+	.panel-purple {
+		stroke: #B79BE0;
+	}
+
+	.panel-orange {
+		stroke: #FFB366;
+	}
+
+	.badge-number {
+		stroke: #FFFFFF;
+	}
+
+	.hdi-muted,
+	.ruler-label {
+		stroke: #A0A0A0;
+	}
+
+	.hdi-link {
+		stroke: #6CB4FF;
+	}
+
+	.separator-green {
+		stroke: #5CBF80;
+	}
+
+	.separator-blue {
+		stroke: #5C9CE6;
+	}
+
+	.splash-backdrop {
+		fill: #3A3A3A;
+	}
+}
