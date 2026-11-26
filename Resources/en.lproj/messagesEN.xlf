@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="messages" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="HDI_Title" resname="HDI_Title">
+				<source>Adjust Vertical Alignment and Padding in My Text Area and Input Objects</source>
+				<target>Adjust Vertical Alignment and Padding in My Text Area and Input Objects</target>
+			</trans-unit>
+			<trans-unit id="HDI_Info" resname="HDI_Info">
+				<source>Form Objects Feature</source>
+				<target>Form Objects Feature</target>
+			</trans-unit>
+			<trans-unit id="BtnClose" resname="BtnClose">
+				<source>Close</source>
+				<target>Close</target>
+			</trans-unit>
+			<trans-unit id="ErrorVersionMain" resname="ErrorVersionMain">
+				<source>Sorry, this "How do I" (HDI) example must&#13;be used with a newer version of 4D&#13;({version} and above)</source>
+				<target>Sorry, this "How do I" (HDI) example must&#13;be used with a newer version of 4D&#13;({version} and above)</target>
+			</trans-unit>
+			<trans-unit id="ErrorVersionSub" resname="ErrorVersionSub">
+				<source>Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</source>
+				<target>Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

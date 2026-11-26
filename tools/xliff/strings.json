@@ -1,0 +1,356 @@
+{
+	"_languages": [
+		"en",
+		"ja"
+	],
+	"menu": [
+		[
+			"MenuItemDemo",
+			"Demo",
+			"デモ"
+		]
+	],
+	"messages": [
+		[
+			"HDI_Title",
+			"Adjust Vertical Alignment and Padding in My Text Area and Input Objects",
+			"テキストエリアと入力オブジェクトの垂直揃えとパディングを調整する"
+		],
+		[
+			"HDI_Info",
+			"Form Objects Feature",
+			"フォームオブジェクト機能"
+		],
+		[
+			"BtnClose",
+			"Close",
+			"閉じる"
+		],
+		[
+			"ErrorVersionMain",
+			"Sorry, this \"How do I\" (HDI) example must\rbe used with a newer version of 4D\r({version} and above)",
+			"申し訳ありませんが、この「How do I」(HDI) 例は\rより新しいバージョンの 4D\r({version} 以降) で使用してください"
+		],
+		[
+			"ErrorVersionSub",
+			"Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.",
+			"このバージョンでこの HDI をデザインモードで開かないでください。開くと、機能が不足しているため、フォームやメソッドが変更される恐れがあります。"
+		]
+	],
+	"HDI": [
+		[
+			"HDI_BtnDemo",
+			"Demo",
+			"デモ"
+		],
+		[
+			"HDI_HowDoI",
+			"How do I…",
+			"How do I…"
+		],
+		[
+			"HDI_LabelVersion",
+			"Version:",
+			"バージョン:"
+		],
+		[
+			"HDI_LabelInfo",
+			"Info:",
+			"情報:"
+		],
+		[
+			"HDI_LabelBlog",
+			"Blog:",
+			"ブログ:"
+		],
+		[
+			"HDI_VersionAndAbove",
+			"{version} and above",
+			"{version} 以降"
+		]
+	],
+	"HDI2": [
+		[
+			"HDI2_Tab1",
+			"Info",
+			"情報"
+		],
+		[
+			"HDI2_Tab2",
+			"Setup Options",
+			"設定方法"
+		],
+		[
+			"HDI2_Tab3",
+			"Try It!",
+			"試してみる"
+		],
+		[
+			"HDI2_BtnOK",
+			"OK",
+			"OK"
+		],
+		[
+			"HDI2_TooltipOK",
+			"Accept",
+			"確定"
+		],
+		[
+			"HDI2_TooltipSearch",
+			"Search",
+			"検索"
+		],
+		[
+			"HDI2_TooltipClear",
+			"Clear",
+			"クリア"
+		],
+		[
+			"HDI2_InputSearch",
+			"Search",
+			"検索"
+		],
+		[
+			"HDI2_InputSample",
+			"This text shows how padding and vertical alignment position it inside the input. Try adjusting the padding and alignment controls to see how the text moves within the input area as you change each value. Keep experimenting with different combinations of settings until you get a feel for how each one affects the final layout of the text.",
+			"このテキストは、パディングと垂直揃えによって入力内のどこに配置されるかを示しています。パディングと揃えの設定を調整すると、テキストが入力領域内でどう動くかがわかります。さまざまな組み合わせを試して、それぞれの設定がテキストのレイアウトにどう影響するかをつかんでください。"
+		],
+		[
+			"HDI2_Title1",
+			"WHAT IS NEW?",
+			"新機能"
+		],
+		[
+			"HDI2_Desc1",
+			"Text areas and input objects can now use padding and vertical alignment. These properties give you precise control over the space around text and where text sits inside its area.",
+			"テキストエリアと入力オブジェクトでパディングと垂直揃えが使えるようになりました。これらのプロパティにより、テキストの周囲のスペースと、テキストが領域内のどこに置かれるかを正確に制御できます。"
+		],
+		[
+			"HDI2_Title2",
+			"WHAT DOES THIS FEATURE BRING?",
+			"この機能でできること"
+		],
+		[
+			"HDI2_Desc2",
+			"Set independent padding values for each side of a text area or input, then align the text at the top, center, or bottom. This makes multi-line fields clearer and helps form layouts match their intended design.",
+			"テキストエリアや入力の各辺に個別のパディング値を設定し、テキストを上・中央・下に揃えられます。複数行フィールドがより読みやすくなり、フォームレイアウトを意図したデザインに合わせやすくなります。"
+		],
+		[
+			"HDI2_Title3",
+			"WHAT TO EXPECT IN THIS HDI?",
+			"この HDI について"
+		],
+		[
+			"HDI2_Desc3",
+			"The following tabs show how padding and vertical alignment affect text areas and input objects, and provide examples you can play with to better visualize what's possible.",
+			"以降のタブでは、パディングと垂直揃えがテキストエリアと入力オブジェクトにどう影響するかを紹介します。実際に操作できる例もあり、何ができるのかを確かめられます。"
+		],
+		[
+			"HDI2_PageTitle2",
+			"4 WAYS TO SET PADDING & ALIGNMENT",
+			"パディングと揃えの 4 つの設定方法"
+		],
+		[
+			"HDI2_JsonTitle",
+			"JSON",
+			"JSON"
+		],
+		[
+			"HDI2_JsonDesc",
+			"Set the padding and verticalAlign properties directly in the form's JSON source, using \"paddingLeft\", \"paddingRight\", \"paddingTop\", \"paddingBottom\", and \"verticalAlign\" keys.",
+			"フォームの JSON ソースに直接 \"paddingLeft\"、\"paddingRight\"、\"paddingTop\"、\"paddingBottom\"、\"verticalAlign\" プロパティを設定します。"
+		],
+		[
+			"HDI2_CssTitle",
+			"CSS",
+			"CSS"
+		],
+		[
+			"HDI2_CssDesc",
+			"Apply padding and vertical-align through either 4D specific or standard CSS keys; that way, you can style your form the same way you would style a web page.",
+			"4D 固有のキーまたは標準的な CSS キーで padding と vertical-align を適用します。Web ページをスタイルするのと同じ要領でフォームをスタイルできます。"
+		],
+		[
+			"HDI2_PropListTitle",
+			"PROPERTY LIST",
+			"プロパティリスト"
+		],
+		[
+			"HDI2_PropListDesc",
+			"Use the Property List in the Form editor to set Padding and Vertical Alignment visually, without writing any code.",
+			"フォームエディターのプロパティリストを使えば、コードを書かずにパディングと垂直揃えを視覚的に設定できます。"
+		],
+		[
+			"HDI2_CommandsTitle",
+			"COMMANDS",
+			"コマンド"
+		],
+		[
+			"HDI2_CommandsDesc",
+			"Change padding and alignment at runtime with the  OBJECT SET VERTICAL ALIGNMENT command, and the new OBJECT SET PADDING command.",
+			"ランタイムでは OBJECT SET VERTICAL ALIGNMENT コマンドと、新しい OBJECT SET PADDING コマンドでパディングと揃えを変更します。"
+		],
+		[
+			"HDI2_PageTitle3",
+			"PADDING & VERTICAL ALIGNMENT",
+			"パディングと垂直揃え"
+		],
+		[
+			"HDI2_PaddingTitle",
+			"TEXT AREA",
+			"テキストエリア"
+		],
+		[
+			"HDI2_PaddingDesc",
+			"With padding and vertical alignment, you can now precisely position text within text area objects and adjust the spacing on all four sides.",
+			"パディングと垂直揃えにより、テキストエリアオブジェクト内のテキスト位置を正確に指定し、4 辺すべてのスペースを調整できるようになりました。"
+		],
+		[
+			"HDI2_StaticTextSample",
+			"This text shows how padding and vertical alignment position it inside the text area.",
+			"このテキストは、パディングと垂直揃えによってテキストエリア内のどこに配置されるかを示しています。"
+		],
+		[
+			"HDI2_AlignTitle",
+			"INPUT",
+			"入力"
+		],
+		[
+			"HDI2_AlignDesc",
+			"Input objects also support padding and vertical alignment, useful for spacing text from the borders or making room for icons like the ones shown here.",
+			"入力オブジェクトもパディングと垂直揃えに対応しています。テキストを枠から離したり、ここに示すようなアイコンのスペースを確保したりするのに便利です。"
+		],
+		[
+			"HDI2_LabelTop",
+			"Top",
+			"上"
+		],
+		[
+			"HDI2_LabelRight",
+			"Right",
+			"右"
+		],
+		[
+			"HDI2_LabelBottom",
+			"Bottom",
+			"下"
+		],
+		[
+			"HDI2_LabelLeft",
+			"Left",
+			"左"
+		],
+		[
+			"HDI2_LabelHorizontalAlign",
+			"Horizontal Align",
+			"水平揃え"
+		],
+		[
+			"HDI2_LabelVerticalAlign",
+			"Vertical Align",
+			"垂直揃え"
+		],
+		[
+			"HDI2_LabelPaddingOptions",
+			"Padding Options",
+			"パディング設定"
+		]
+	],
+	"toolbar": [
+		[
+			"TF_LabelPageNumber",
+			"Page number:",
+			"ページ番号:"
+		],
+		[
+			"TF_LabelTabTitle",
+			"Tab Title:",
+			"タブタイトル:"
+		],
+		[
+			"TF_LabelPage",
+			"Page:",
+			"ページ:"
+		],
+		[
+			"TF_HeaderTitle",
+			"Title",
+			"タイトル"
+		],
+		[
+			"TF_HeaderDescription",
+			"Description",
+			"説明"
+		],
+		[
+			"Tip_FirstRecord",
+			"First Record",
+			"最初のレコード"
+		],
+		[
+			"Tip_PreviousRecord",
+			"Previous Record",
+			"前のレコード"
+		],
+		[
+			"Tip_NextRecord",
+			"Next Record",
+			"次のレコード"
+		],
+		[
+			"Tip_LastRecord",
+			"Last Record",
+			"最後のレコード"
+		],
+		[
+			"Tip_DeleteRecord",
+			"Delete Record",
+			"レコード削除"
+		],
+		[
+			"Tip_AddRecord",
+			"Add Record",
+			"レコード追加"
+		],
+		[
+			"Tip_DeleteSelection",
+			"Delete Selection",
+			"選択レコード削除"
+		],
+		[
+			"Tip_ShowAll",
+			"Show All",
+			"全レコード表示"
+		],
+		[
+			"Tip_ShowSubset",
+			"Show Subset",
+			"選択レコード表示"
+		],
+		[
+			"Tip_Query",
+			"Query",
+			"クエリ"
+		],
+		[
+			"Tip_OrderBy",
+			"Order By",
+			"並べ替え"
+		],
+		[
+			"Tip_Cancel",
+			"Cancel",
+			"キャンセル"
+		],
+		[
+			"Tip_OK",
+			"Accept",
+			"確定"
+		],
+		[
+			"Tip_RecordNumber",
+			"Record Position within Selection",
+			"選択内のレコード位置"
+		]
+	]
+}

@@ -1,24 +1,42 @@
-.Buttons_13 {
-	font-family: Segoe UI;
-	font-size: 12px;
-}
+/*
+	HDI_FormObj_VericalAlignAndPadding — Windows stylesheet
+
+	Brand colours and typography: styleSheets.css (all platforms).
+	This file only adapts control sizing to the active form theme.
+
+	NOTE: the 27px Liquid Glass threshold is macOS-only. No equivalent
+	height has been verified for Fluent UI on Windows 11 with 4D 21 R2+;
+	these rules keep the classic 23px until captured on Windows.
+*/
 
 .default {
-	font-family: Segoe UI;
 	font-size: 12px;
+	height: 23px;
 }
 
-.default1 {
-	font-family: Segoe UI;
+button.default {
 	font-size: 12px;
+	height: 23px;
 }
 
-.HDI {
-	font-family: Segoe UI;
-	font-size: 16px;
-	font-weight: bold;
+@media (form-theme: fluent-ui) {
+
+	.default {
+		height: 23px;
+	}
+
+	button.default {
+		height: 23px;
+	}
 }
 
-.description {
-    font-size: 14px;
+@media (form-theme: win-classic) {
+
+	.default {
+		height: 23px;
+	}
+
+	button.default {
+		height: 23px;
+	}
 }

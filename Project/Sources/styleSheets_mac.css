@@ -1,24 +1,42 @@
-.Buttons_13 {
-	font-family: Lucida Grande;
-	font-size: 13px;
-}
+/*
+	HDI_FormObj_VericalAlignAndPadding — macOS stylesheet
+
+	Brand colours and typography: styleSheets.css (all platforms).
+	This file only adapts control sizing to the active form theme.
+
+	Under Liquid Glass (macOS Tahoe, 4D 21 R3+) push buttons and dropdowns
+	need a 27px height to receive the rounded translucent variant; at 26px
+	or below they render flat and square. Classic macOS keeps 23px.
+*/
 
 .default {
-	font-family: Lucida Grande;
 	font-size: 13px;
+	height: 23px;
 }
 
-.default1 {
-	font-family: Lucida Grande;
+button.default {
 	font-size: 13px;
+	height: 23px;
 }
 
-.HDI {
-	font-family: Lucida Grande;
-	font-size: 16px;
-	font-weight: bold;
+@media (form-theme: liquid-glass) {
+
+	.default {
+		height: 27px;
+	}
+
+	button.default {
+		height: 27px;
+	}
 }
 
-.description {
-    font-size: 16px;
+@media (form-theme: mac-classic) {
+
+	.default {
+		height: 23px;
+	}
+
+	button.default {
+		height: 23px;
+	}
 }

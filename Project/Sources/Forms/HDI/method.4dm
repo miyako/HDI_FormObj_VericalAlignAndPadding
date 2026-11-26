@@ -1,4 +1,4 @@
-var $version; $maintext; $subtext; $r; $format : Text
+var $version; $maintext; $r; $format : Text
 var $width; $height; $shift : Integer
 
 Case of 
@@ -54,7 +54,7 @@ Case of
 			If (Application version:C493<Form:C1466.minimumVersion)
 				
 				Form:C1466.quit:=True:C214
-				OBJECT SET TITLE:C194(*; "BtnDemo"; "Close")
+				OBJECT SET TITLE:C194(*; "BtnDemo"; Localized string("BtnClose"))
 				
 				$maintext:=OBJECT Get title:C1068(*; "ErrorMainText")
 				$maintext:=Replace string:C233($maintext; "{version}"; $version)
@@ -68,34 +68,4 @@ Case of
 		End if 
 		
 		
-		If (Form:C1466.license#Null:C1517) & (Form:C1466.quit=False:C215)
-			
-			If (Not:C34(Is license available:C714(Form:C1466.license)))
-				
-				Form:C1466.quit:=True:C214
-				OBJECT SET TITLE:C194(*; "BtnDemo"; "Close")
-				
-				Case of 
-						
-					: (Form:C1466.license=4D View license:K44:4)
-						$maintext:="Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature."
-						$subtext:="You must have a valid 4D View Pro license to continue."
-						
-					: (Form:C1466.license=4D Write license:K44:2)
-						$maintext:="Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature."
-						$subtext:="You must have a valid 4D Write Pro license to continue."
-						
-				End case 
-				
-				OBJECT SET TITLE:C194(*; "ErrorMainText"; $maintext)
-				OBJECT SET TITLE:C194(*; "ErrorSubText"; $subtext)
-				
-				OBJECT SET VISIBLE:C603(*; "ErrorMainText"; True:C214)
-				OBJECT SET VISIBLE:C603(*; "ErrorSubText"; True:C214)
-				OBJECT SET VISIBLE:C603(*; "White90"; True:C214)
-				
-			End if 
-			
-		End if 
-		
-End case 
+	End case 

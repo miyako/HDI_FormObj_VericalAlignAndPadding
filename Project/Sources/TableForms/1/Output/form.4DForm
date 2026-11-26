@@ -46,9 +46,7 @@
 					"left": 24,
 					"width": 48,
 					"height": 48,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Add Record"
-					},
+					"tooltip": ":xliff:Tip_AddRecord",
 					"action": "addSubrecord",
 					"rowCount": 4,
 					"picture": "/RESOURCES/Images/Buttons/LightGrey/NewRecord.png",
@@ -65,9 +63,7 @@
 					"left": 87,
 					"width": 48,
 					"height": 48,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Delete Selectio"
-					},
+					"tooltip": ":xliff:Tip_DeleteSelection",
 					"action": "deleteSubrecord",
 					"rowCount": 4,
 					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteSelection.png",
@@ -84,9 +80,7 @@
 					"left": 150,
 					"width": 48,
 					"height": 48,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Show All"
-					},
+					"tooltip": ":xliff:Tip_ShowAll",
 					"rowCount": 4,
 					"picture": "/RESOURCES/Images/Buttons/LightGrey/ShowAll.png",
 					"switchWhenRollover": true,
@@ -103,9 +97,7 @@
 					"left": 213,
 					"width": 48,
 					"height": 48,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Show Subset"
-					},
+					"tooltip": ":xliff:Tip_ShowSubset",
 					"rowCount": 4,
 					"picture": "/RESOURCES/Images/Buttons/LightGrey/ShowSubset.png",
 					"switchWhenRollover": true,
@@ -122,9 +114,7 @@
 					"left": 276,
 					"width": 48,
 					"height": 48,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Query"
-					},
+					"tooltip": ":xliff:Tip_Query",
 					"rowCount": 4,
 					"picture": "/RESOURCES/Images/Buttons/LightGrey/Query.png",
 					"switchWhenRollover": true,
@@ -141,9 +131,7 @@
 					"left": 339,
 					"width": 48,
 					"height": 48,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Order By"
-					},
+					"tooltip": ":xliff:Tip_OrderBy",
 					"rowCount": 4,
 					"picture": "/RESOURCES/Images/Buttons/LightGrey/OrderBy.png",
 					"switchWhenRollover": true,
@@ -165,7 +153,7 @@
 					"width": 64,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "Page:"
+					"text": ":xliff:TF_LabelPage"
 				},
 				"S2_Text": {
 					"type": "text",
@@ -174,7 +162,7 @@
 					"width": 240,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "Title"
+					"text": ":xliff:TF_HeaderTitle"
 				},
 				"Rectangle4": {
 					"type": "rectangle",
@@ -268,7 +256,7 @@
 					"width": 240,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "Description"
+					"text": ":xliff:TF_HeaderDescription"
 				},
 				"Splitter": {
 					"type": "splitter",

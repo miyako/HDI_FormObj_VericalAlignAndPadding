@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="toolbar" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="TF_LabelPageNumber" resname="TF_LabelPageNumber">
+				<source>Page number:</source>
+				<target>Page number:</target>
+			</trans-unit>
+			<trans-unit id="TF_LabelTabTitle" resname="TF_LabelTabTitle">
+				<source>Tab Title:</source>
+				<target>Tab Title:</target>
+			</trans-unit>
+			<trans-unit id="TF_LabelPage" resname="TF_LabelPage">
+				<source>Page:</source>
+				<target>Page:</target>
+			</trans-unit>
+			<trans-unit id="TF_HeaderTitle" resname="TF_HeaderTitle">
+				<source>Title</source>
+				<target>Title</target>
+			</trans-unit>
+			<trans-unit id="TF_HeaderDescription" resname="TF_HeaderDescription">
+				<source>Description</source>
+				<target>Description</target>
+			</trans-unit>
+			<trans-unit id="Tip_FirstRecord" resname="Tip_FirstRecord">
+				<source>First Record</source>
+				<target>First Record</target>
+			</trans-unit>
+			<trans-unit id="Tip_PreviousRecord" resname="Tip_PreviousRecord">
+				<source>Previous Record</source>
+				<target>Previous Record</target>
+			</trans-unit>
+			<trans-unit id="Tip_NextRecord" resname="Tip_NextRecord">
+				<source>Next Record</source>
+				<target>Next Record</target>
+			</trans-unit>
+			<trans-unit id="Tip_LastRecord" resname="Tip_LastRecord">
+				<source>Last Record</source>
+				<target>Last Record</target>
+			</trans-unit>
+			<trans-unit id="Tip_DeleteRecord" resname="Tip_DeleteRecord">
+				<source>Delete Record</source>
+				<target>Delete Record</target>
+			</trans-unit>
+			<trans-unit id="Tip_AddRecord" resname="Tip_AddRecord">
+				<source>Add Record</source>
+				<target>Add Record</target>
+			</trans-unit>
+			<trans-unit id="Tip_DeleteSelection" resname="Tip_DeleteSelection">
+				<source>Delete Selection</source>
+				<target>Delete Selection</target>
+			</trans-unit>
+			<trans-unit id="Tip_ShowAll" resname="Tip_ShowAll">
+				<source>Show All</source>
+				<target>Show All</target>
+			</trans-unit>
+			<trans-unit id="Tip_ShowSubset" resname="Tip_ShowSubset">
+				<source>Show Subset</source>
+				<target>Show Subset</target>
+			</trans-unit>
+			<trans-unit id="Tip_Query" resname="Tip_Query">
+				<source>Query</source>
+				<target>Query</target>
+			</trans-unit>
+			<trans-unit id="Tip_OrderBy" resname="Tip_OrderBy">
+				<source>Order By</source>
+				<target>Order By</target>
+			</trans-unit>
+			<trans-unit id="Tip_Cancel" resname="Tip_Cancel">
+				<source>Cancel</source>
+				<target>Cancel</target>
+			</trans-unit>
+			<trans-unit id="Tip_OK" resname="Tip_OK">
+				<source>Accept</source>
+				<target>Accept</target>
+			</trans-unit>
+			<trans-unit id="Tip_RecordNumber" resname="Tip_RecordNumber">
+				<source>Record Position within Selection</source>
+				<target>Record Position within Selection</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
