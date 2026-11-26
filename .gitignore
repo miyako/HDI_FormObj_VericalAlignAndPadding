@@ -1,46 +1,31 @@
-#--------------------------------
-# Ignore invisible files/folders
-#--------------------------------
-.*
-!.git*
-.git/
-
-#--------------------------------
-# Ignore data file
-#--------------------------------
-#[dD][aA][tT][aA]/
+# 4D data, logs and derived files
+# Data/Data.4DD is committed on purpose (sample data ships with the demo)
+Data/Logs/
 *.journal
 *.4DIndx
 *.Match
-
-#--------------------------------
-# Ignore derived data
-#--------------------------------
-Project/DerivedData/
+DerivedData/
 Libraries/
-
-#--------------------------------
-# Ignore logs
-#--------------------------------
-Logs/
-
-#--------------------------------
-# Ignore settings & preferences
-#--------------------------------
 userPreferences.*/
-Settings/
-#!buildApp.4DSettings
 
-#--------------------------------
-# Miscellaneous
-#--------------------------------
-*__Orphan__*
-*symbols.txt
+# Settings are machine-specific in this demo repository
+Settings/
+
+# System files
+.DS_Store
 ehthumbs.db
 Thumbs.db
 
-#--------------------------------
-# Added by user
-#--------------------------------
+# Tools provisioned by the 4D skills (see the 4dtools skill)
+/tools/4dcatalog/
+/tools/4dform/
+/tools/4dlsp/
+/tools/4dlang/
+/tools/4dcli/
+
+# Project-specific
 Resources/php.ini
 Project/Trash/
+*__Orphan__*
+*symbols.txt
+/tools/4dform/
