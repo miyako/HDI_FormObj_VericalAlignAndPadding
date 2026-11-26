@@ -3,8 +3,8 @@
 	<file datatype="plaintext" original="messages" source-language="en" target-language="ja">
 		<body>
 			<trans-unit id="HDI_Title" resname="HDI_Title">
-				<source>Adjust Vertical Alignment and Padding&#13;in My Text Area and Input Objects</source>
-				<target>テキストエリアと入力オブジェクトの&#13;垂直揃えとパディングを調整する</target>
+				<source>Adjust Vertical Alignment and Padding in My Text Area and Input Objects</source>
+				<target>テキストエリアと入力オブジェクトの垂直揃えとパディングを調整する</target>
 			</trans-unit>
 			<trans-unit id="HDI_Info" resname="HDI_Info">
 				<source>Form Objects Feature</source>

@@ -6,7 +6,7 @@ Infos:=ds:C1482.INFO.all().orderBy("PageNumber").toCollection()
 
 // tab titles follow the UI language; the stored TabTitle is the fallback
 var $titles : Collection
-$titles:=New collection:C1781
+$titles:=New collection
 
 var $i : Integer
 For ($i; 0; Infos.length-1)
