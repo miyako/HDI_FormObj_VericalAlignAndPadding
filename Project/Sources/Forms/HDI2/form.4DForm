@@ -1,1638 +1,1480 @@
 {
-	"destination": "detailScreen",
-	"windowMinWidth": 800,
-	"windowMaxWidth": 32000,
-	"windowMinHeight": 540,
-	"windowMaxHeight": 32000,
-	"width": 960,
-	"height": 720,
-	"menuBar": "Menu Bar #1",
-	"markerHeader": 15,
-	"markerBody": 200,
-	"markerBreak": 220,
-	"markerFooter": 240,
-	"events": [
-		"onLoad",
-		"onCloseBox"
-	],
-	"method": "method.4dm",
-	"pageFormat": {
-		"paperName": "A4",
-		"paperWidth": "842pt",
-		"paperHeight": "595pt"
-	},
-	"pages": [
-		{
-			"objects": {
-				"Tab Control": {
-					"type": "tab",
-					"top": 20,
-					"left": 20,
-					"width": 920,
-					"height": 650,
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"dataSource": "objTabs",
-					"dataSourceTypeHint": "object",
-					"action": "gotoPage",
-					"events": [
-						"onClick"
-					]
-				},
-				"BtnOK": {
-					"type": "button",
-					"top": 680,
-					"left": 838,
-					"width": 102,
-					"height": 20,
-					"sizingX": "move",
-					"sizingY": "move",
-					"tooltip": ":xliff:Tip_OK",
-					"shortcutKey": "[Enter]",
-					"text": ":xliff:HDI2_BtnOK",
-					"class": "Buttons_13",
-					"defaultButton": true,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/BtnOK.4dm"
-				},
-				"Line": {
-					"type": "line",
-					"top": 0,
-					"left": 480,
-					"height": 720,
-					"visibility": "hidden",
-					"sizingY": "grow",
-					"stroke": "#800080",
-					"strokeDashArray": "1 1"
-				}
-			}
-		},
-		{
-			"objects": {
-				"GreenShadow": {
-					"type": "rectangle",
-					"top": 138,
-					"left": 92,
-					"width": 770,
-					"height": 139,
-					"borderRadius": 20,
-					"fill": "#459E63",
-					"stroke": "transparent"
-				},
-				"GreenPanel": {
-					"type": "rectangle",
-					"top": 138,
-					"left": 99,
-					"width": 770,
-					"height": 139,
-					"fill": "#F8FCF7",
-					"borderRadius": 15,
-					"stroke": "#459E63"
-				},
-				"BlueShadow": {
-					"type": "rectangle",
-					"top": 290,
-					"left": 92,
-					"width": 770,
-					"height": 139,
-					"borderRadius": 20,
-					"fill": "#247CD3",
-					"stroke": "transparent"
-				},
-				"BluePanel": {
-					"type": "rectangle",
-					"top": 290,
-					"left": 99,
-					"width": 770,
-					"height": 139,
-					"fill": "#F4F9FE",
-					"borderRadius": 15,
-					"stroke": "#247CD3"
-				},
-				"PurpleShadow": {
-					"type": "rectangle",
-					"top": 442,
-					"left": 92,
-					"width": 770,
-					"height": 139,
-					"borderRadius": 20,
-					"fill": "#9F7BD9",
-					"stroke": "transparent"
-				},
-				"PurplePanel": {
-					"type": "rectangle",
-					"top": 442,
-					"left": 99,
-					"width": 770,
-					"height": 139,
-					"fill": "#F9F7FB",
-					"borderRadius": 15,
-					"stroke": "#9F7BD9"
-				},
-				"InfoIcon1": {
-					"type": "picture",
-					"top": 162,
-					"left": 117,
-					"width": 83,
-					"height": 90,
-					"picture": "/RESOURCES/Images/Icons/Tab 1 - Icon 1.png",
-					"pictureFormat": "scaled"
-				},
-				"Title1": {
-					"type": "text",
-					"text": ":xliff:HDI2_Title1",
-					"top": 162,
-					"left": 220,
-					"width": 500,
-					"height": 22,
-					"fontWeight": "bold",
-					"fontSize": 18,
-					"stroke": "#459E63",
-					"fontFamily": "Arial"
-				},
-				"Description1": {
-					"type": "text",
-					"text": ":xliff:HDI2_Desc1",
-					"top": 200,
-					"left": 220,
-					"width": 617,
-					"height": 60,
-					"fontFamily": "Arial",
-					"fontSize": 13
-				},
-				"InfoIcon2": {
-					"type": "picture",
-					"top": 314,
-					"left": 117,
-					"width": 83,
-					"height": 90,
-					"picture": "/RESOURCES/Images/Icons/Tab 1 - Icon 2.png",
-					"pictureFormat": "scaled"
-				},
-				"Title2": {
-					"type": "text",
-					"text": ":xliff:HDI2_Title2",
-					"top": 314,
-					"left": 220,
-					"width": 500,
-					"height": 22,
-					"fontWeight": "bold",
-					"fontSize": 18,
-					"stroke": "#247CD3",
-					"fontFamily": "Arial"
-				},
-				"Description2": {
-					"type": "text",
-					"text": ":xliff:HDI2_Desc2",
-					"top": 352,
-					"left": 220,
-					"width": 617,
-					"height": 60,
-					"fontFamily": "Arial",
-					"fontSize": 13
-				},
-				"InfoIcon3": {
-					"type": "picture",
-					"top": 466,
-					"left": 117,
-					"width": 83,
-					"height": 90,
-					"picture": "/RESOURCES/Images/Icons/Tab 1 - Icon 3.png",
-					"pictureFormat": "scaled"
-				},
-				"Title3": {
-					"type": "text",
-					"text": ":xliff:HDI2_Title3",
-					"top": 466,
-					"left": 220,
-					"width": 500,
-					"height": 22,
-					"fontWeight": "bold",
-					"fontSize": 18,
-					"stroke": "#9F7BD9",
-					"fontFamily": "Arial"
-				},
-				"Description3": {
-					"type": "text",
-					"text": ":xliff:HDI2_Desc3",
-					"top": 504,
-					"left": 220,
-					"width": 617,
-					"height": 60,
-					"fontFamily": "Arial",
-					"fontSize": 13
-				}
-			}
-		},
-		{
-			"objects": {
-				"PageTitle2": {
-					"type": "text",
-					"text": ":xliff:HDI2_PageTitle2",
-					"top": 55,
-					"left": 88,
-					"width": 770,
-					"height": 36,
-					"fontSize": 28,
-					"fontWeight": "bold",
-					"textAlign": "center",
-					"stroke": "#424242",
-					"fontFamily": "Arial"
-				},
-				"JsonShadow": {
-					"type": "rectangle",
-					"top": 102,
-					"left": 31,
-					"width": 430,
-					"height": 260,
-					"borderRadius": 20,
-					"fill": "#459E63",
-					"stroke": "transparent"
-				},
-				"JsonPanel": {
-					"type": "rectangle",
-					"top": 102,
-					"left": 38,
-					"width": 430,
-					"height": 260,
-					"fill": "#F8FCF7",
-					"borderRadius": 15,
-					"stroke": "#459E63"
-				},
-				"JsonOval": {
-					"type": "oval",
-					"top": 116,
-					"left": 63,
-					"width": 40,
-					"height": 39,
-					"stroke": "transparent",
-					"fill": "#459E63"
-				},
-				"JsonNumber": {
-					"type": "text",
-					"text": "1",
-					"top": 121,
-					"left": 63,
-					"width": 40,
-					"height": 29,
-					"fontSize": 24,
-					"fontWeight": "bold",
-					"textAlign": "center",
-					"stroke": "#FFFFFF",
-					"fontFamily": "Arial"
-				},
-				"JsonTitle": {
-					"type": "text",
-					"text": "JSON",
-					"top": 126,
-					"left": 113,
-					"width": 287,
-					"height": 18,
-					"fontWeight": "bold",
-					"fontSize": 18,
-					"stroke": "#459E63",
-					"fontFamily": "Arial"
-				},
-				"JsonDescription": {
-					"type": "text",
-					"text": ":xliff:HDI2_JsonDesc",
-					"top": 192,
-					"left": 63,
-					"width": 175,
-					"height": 120,
-					"fontFamily": "Arial",
-					"fontSize": 13,
-					"textAlign": "justify"
-				},
-				"CssShadow": {
-					"type": "rectangle",
-					"top": 102,
-					"left": 491,
-					"width": 430,
-					"height": 260,
-					"borderRadius": 20,
-					"fill": "#247CD3",
-					"stroke": "transparent"
-				},
-				"CssPanel": {
-					"type": "rectangle",
-					"top": 102,
-					"left": 498,
-					"width": 430,
-					"height": 260,
-					"fill": "#F4F9FE",
-					"borderRadius": 15,
-					"stroke": "#247CD3"
-				},
-				"CssOval": {
-					"type": "oval",
-					"top": 116,
-					"left": 521,
-					"width": 40,
-					"height": 39,
-					"stroke": "transparent",
-					"fill": "#247CD3"
-				},
-				"CssNumber": {
-					"type": "text",
-					"text": "2",
-					"top": 121,
-					"left": 521,
-					"width": 40,
-					"height": 29,
-					"fontSize": 24,
-					"fontWeight": "bold",
-					"textAlign": "center",
-					"stroke": "#FFFFFF",
-					"fontFamily": "Arial"
-				},
-				"CssTitle": {
-					"type": "text",
-					"text": "CSS",
-					"top": 126,
-					"left": 574,
-					"width": 287,
-					"height": 18,
-					"fontWeight": "bold",
-					"fontSize": 18,
-					"stroke": "#247CD3",
-					"fontFamily": "Arial"
-				},
-				"CssDescription": {
-					"type": "text",
-					"text": ":xliff:HDI2_CssDesc",
-					"top": 204,
-					"left": 521,
-					"width": 175,
-					"height": 96,
-					"fontFamily": "Arial",
-					"fontSize": 13,
-					"textAlign": "justify"
-				},
-				"PropListShadow": {
-					"type": "rectangle",
-					"top": 375,
-					"left": 31,
-					"width": 430,
-					"height": 260,
-					"borderRadius": 20,
-					"fill": "#9F7BD9",
-					"stroke": "transparent"
-				},
-				"PropListPanel": {
-					"type": "rectangle",
-					"top": 375,
-					"left": 38,
-					"width": 430,
-					"height": 260,
-					"fill": "#F9F7FB",
-					"borderRadius": 15,
-					"stroke": "#9F7BD9"
-				},
-				"PropListOval": {
-					"type": "oval",
-					"top": 389,
-					"left": 63,
-					"width": 40,
-					"height": 39,
-					"stroke": "transparent",
-					"fill": "#9F7BD9"
-				},
-				"PropListNumber": {
-					"type": "text",
-					"text": "3",
-					"top": 394,
-					"left": 63,
-					"width": 40,
-					"height": 29,
-					"fontSize": 24,
-					"fontWeight": "bold",
-					"textAlign": "center",
-					"stroke": "#FFFFFF",
-					"fontFamily": "Arial"
-				},
-				"PropListTitle": {
-					"type": "text",
-					"text": ":xliff:HDI2_PropListTitle",
-					"top": 399,
-					"left": 113,
-					"width": 287,
-					"height": 18,
-					"fontWeight": "bold",
-					"fontSize": 18,
-					"stroke": "#9F7BD9",
-					"fontFamily": "Arial"
-				},
-				"PropListDescription": {
-					"type": "text",
-					"text": ":xliff:HDI2_PropListDesc",
-					"top": 486,
-					"left": 63,
-					"width": 150,
-					"height": 80,
-					"fontFamily": "Arial",
-					"fontSize": 13,
-					"textAlign": "justify"
-				},
-				"CommandsShadow": {
-					"type": "rectangle",
-					"top": 375,
-					"left": 491,
-					"width": 430,
-					"height": 260,
-					"borderRadius": 20,
-					"fill": "#FFA23D",
-					"stroke": "transparent"
-				},
-				"CommandsPanel": {
-					"type": "rectangle",
-					"top": 375,
-					"left": 498,
-					"width": 430,
-					"height": 260,
-					"fill": "#FCF9F6",
-					"borderRadius": 15,
-					"stroke": "#FFA23D"
-				},
-				"CommandsOval": {
-					"type": "oval",
-					"top": 389,
-					"left": 521,
-					"width": 40,
-					"height": 39,
-					"stroke": "transparent",
-					"fill": "#FFA23D"
-				},
-				"CommandsNumber": {
-					"type": "text",
-					"text": "4",
-					"top": 394,
-					"left": 521,
-					"width": 40,
-					"height": 29,
-					"fontSize": 24,
-					"fontWeight": "bold",
-					"textAlign": "center",
-					"stroke": "#FFFFFF",
-					"fontFamily": "Arial"
-				},
-				"CommandsTitle": {
-					"type": "text",
-					"text": ":xliff:HDI2_CommandsTitle",
-					"top": 399,
-					"left": 574,
-					"width": 287,
-					"height": 18,
-					"fontWeight": "bold",
-					"fontSize": 18,
-					"stroke": "#FFA23D",
-					"fontFamily": "Arial"
-				},
-				"CommandsDescription": {
-					"type": "text",
-					"text": ":xliff:HDI2_CommandsDesc",
-					"top": 470,
-					"left": 521,
-					"width": 150,
-					"height": 112,
-					"fontFamily": "Arial",
-					"fontSize": 13,
-					"textAlign": "justify"
-				},
-				"Static Picture3": {
-					"type": "picture",
-					"top": 152,
-					"left": 261,
-					"width": 200,
-					"height": 200,
-					"picture": "/RESOURCES/Images/Examples/json.png",
-					"pictureFormat": "scaled"
-				},
-				"Static Picture4": {
-					"type": "picture",
-					"top": 152,
-					"left": 716,
-					"width": 200,
-					"height": 200,
-					"picture": "/RESOURCES/Images/Examples/css.png",
-					"pictureFormat": "scaled"
-				},
-				"Static Picture5": {
-					"type": "picture",
-					"top": 399,
-					"left": 228,
-					"width": 250,
-					"height": 250,
-					"picture": "/RESOURCES/Images/Examples/propertylist.png",
-					"pictureFormat": "scaled"
-				},
-				"Static Picture6": {
-					"type": "picture",
-					"top": 401,
-					"left": 683,
-					"width": 250,
-					"height": 250,
-					"picture": "/RESOURCES/Images/Examples/commands.png",
-					"pictureFormat": "scaled"
-				}
-			}
-		},
-		{
-			"objects": {
-				"AlignShadow": {
-					"type": "rectangle",
-					"top": 100,
-					"left": 487,
-					"width": 420,
-					"height": 551,
-					"borderRadius": 20,
-					"fill": "#247CD3",
-					"stroke": "transparent"
-				},
-				"AlignPanel": {
-					"type": "rectangle",
-					"top": 100,
-					"left": 494,
-					"width": 420,
-					"height": 551,
-					"fill": "#F4F9FE",
-					"borderRadius": 15,
-					"stroke": "#247CD3"
-				},
-				"PaddingShadow": {
-					"type": "rectangle",
-					"top": 100,
-					"left": 48,
-					"width": 420,
-					"height": 551,
-					"borderRadius": 20,
-					"fill": "#459E63",
-					"stroke": "transparent"
-				},
-				"PaddingPanel": {
-					"type": "rectangle",
-					"top": 100,
-					"left": 55,
-					"width": 420,
-					"height": 551,
-					"fill": "#F8FCF7",
-					"borderRadius": 15,
-					"stroke": "#459E63"
-				},
-				"PageTitle": {
-					"type": "text",
-					"text": ":xliff:HDI2_PageTitle3",
-					"top": 55,
-					"left": 88,
-					"width": 770,
-					"height": 36,
-					"fontWeight": "bold",
-					"fontSize": 26,
-					"textAlign": "center",
-					"stroke": "#424242",
-					"fontFamily": "Arial"
-				},
-				"PaddingTitle": {
-					"type": "text",
-					"text": ":xliff:HDI2_PaddingTitle",
-					"top": 125,
-					"left": 134,
-					"width": 120,
-					"height": 25,
-					"fontWeight": "bold",
-					"fontSize": 20,
-					"stroke": "#459E63",
-					"fontFamily": "Arial"
-				},
-				"PaddingDescription": {
-					"type": "text",
-					"text": ":xliff:HDI2_PaddingDesc",
-					"top": 158,
-					"left": 134,
-					"width": 314,
-					"height": 64,
-					"fontFamily": "Arial",
-					"fontSize": 13,
-					"textAlign": "justify"
-				},
-				"StaticTextSample": {
-					"type": "text",
-					"text": ":xliff:HDI2_StaticTextSample",
-					"top": 238,
-					"left": 88,
-					"width": 354,
-					"height": 100,
-					"fill": "#FFFFFF",
-					"stroke": "#459E63",
-					"borderRadius": 6,
-					"fontFamily": "Arial",
-					"fontSize": 13,
-					"borderStyle": "solid"
-				},
-				"PaddingTopRulerLabel": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelTop",
-					"top": 379,
-					"left": 80,
-					"width": 50,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"fontWeight": "bold"
-				},
-				"PaddingTopRuler": {
-					"type": "ruler",
-					"top": 402,
-					"left": 90,
-					"width": 100,
-					"height": 28,
-					"dataSource": "vtPaddingTop",
-					"min": 0,
-					"max": 100,
-					"step": 1,
-					"graduationStep": 1,
-					"showGraduations": false,
-					"labelsPlacement": "bottom",
-					"method": "ObjectMethods/PaddingTopRuler.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"PaddingTopValue": {
-					"type": "input",
-					"top": 393,
-					"left": 200,
-					"width": 40,
-					"height": 28,
-					"dataSource": "vtPaddingTop",
-					"textAlign": "center",
-					"fill": "#FFFFFF",
-					"stroke": "#459E63",
-					"borderRadius": 4,
-					"fontSize": 11,
-					"fontFamily": "Arial",
-					"method": "ObjectMethods/PaddingTopRuler.4dm",
-					"events": [
-						"onDataChange"
-					],
-					"borderStyle": "solid",
-					"verticalAlign": "middle"
-				},
-				"PaddingRightRulerLabel": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelRight",
-					"top": 379,
-					"left": 282,
-					"width": 50,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"fontWeight": "bold"
-				},
-				"PaddingRightRuler": {
-					"type": "ruler",
-					"top": 402,
-					"left": 292,
-					"width": 100,
-					"height": 28,
-					"dataSource": "vtPaddingRight",
-					"min": 0,
-					"max": 100,
-					"step": 1,
-					"graduationStep": 1,
-					"showGraduations": false,
-					"labelsPlacement": "bottom",
-					"method": "ObjectMethods/PaddingTopRuler.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"PaddingRightValue": {
-					"type": "input",
-					"top": 393,
-					"left": 402,
-					"width": 40,
-					"height": 28,
-					"dataSource": "vtPaddingRight",
-					"textAlign": "center",
-					"fill": "#FFFFFF",
-					"stroke": "#459E63",
-					"borderRadius": 4,
-					"fontSize": 11,
-					"fontFamily": "Arial",
-					"method": "ObjectMethods/PaddingTopRuler.4dm",
-					"events": [
-						"onDataChange"
-					],
-					"borderStyle": "solid",
-					"verticalAlign": "middle"
-				},
-				"PaddingBottomRulerLabel": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelBottom",
-					"top": 439,
-					"left": 80,
-					"width": 50,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"fontWeight": "bold"
-				},
-				"PaddingBottomRuler": {
-					"type": "ruler",
-					"top": 455,
-					"left": 90,
-					"width": 100,
-					"height": 28,
-					"dataSource": "vtPaddingBottom",
-					"min": 0,
-					"max": 100,
-					"step": 1,
-					"graduationStep": 1,
-					"showGraduations": false,
-					"labelsPlacement": "bottom",
-					"method": "ObjectMethods/PaddingTopRuler.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"PaddingBottomValue": {
-					"type": "input",
-					"top": 446,
-					"left": 200,
-					"width": 40,
-					"height": 28,
-					"dataSource": "vtPaddingBottom",
-					"textAlign": "center",
-					"fill": "#FFFFFF",
-					"stroke": "#459E63",
-					"borderRadius": 4,
-					"fontSize": 11,
-					"fontFamily": "Arial",
-					"method": "ObjectMethods/PaddingTopRuler.4dm",
-					"events": [
-						"onDataChange"
-					],
-					"borderStyle": "solid",
-					"verticalAlign": "middle"
-				},
-				"PaddingLeftRulerLabel": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelLeft",
-					"top": 434,
-					"left": 282,
-					"width": 50,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"fontWeight": "bold"
-				},
-				"PaddingLeftRuler": {
-					"type": "ruler",
-					"top": 455,
-					"left": 292,
-					"width": 100,
-					"height": 28,
-					"dataSource": "vtPaddingLeft",
-					"min": 0,
-					"max": 100,
-					"step": 1,
-					"graduationStep": 1,
-					"showGraduations": false,
-					"labelsPlacement": "bottom",
-					"method": "ObjectMethods/PaddingTopRuler.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"PaddingLeftValue": {
-					"type": "input",
-					"top": 446,
-					"left": 402,
-					"width": 40,
-					"height": 28,
-					"dataSource": "vtPaddingLeft",
-					"textAlign": "center",
-					"fill": "#FFFFFF",
-					"stroke": "#459E63",
-					"borderRadius": 4,
-					"fontSize": 11,
-					"fontFamily": "Arial",
-					"method": "ObjectMethods/PaddingTopRuler.4dm",
-					"events": [
-						"onDataChange"
-					],
-					"borderStyle": "solid",
-					"verticalAlign": "middle"
-				},
-				"HorizontalAlignRulerLabel": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelHorizontalAlign",
-					"top": 512,
-					"left": 121,
-					"width": 104,
-					"height": 15,
-					"fontSize": 12,
-					"stroke": "#459E63",
-					"fontFamily": "Arial",
-					"fontWeight": "bold",
-					"textAlign": "center"
-				},
-				"HAlignLeftBtn": {
-					"type": "radio",
-					"text": "",
-					"top": 558,
-					"left": 120,
-					"width": 35,
-					"height": 35,
-					"dataSource": "vtHAlignIsLeft",
-					"radioGroup": "hAlignGroup",
-					"style": "toolbar",
-					"fontSize": 10,
-					"method": "ObjectMethods/HAlignLeftBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/Icons/left-green.png",
-					"iconFrames": 1,
-					"textPlacement": "center"
-				},
-				"HAlignCenterBtn": {
-					"type": "radio",
-					"text": "",
-					"top": 558,
-					"left": 155,
-					"width": 35,
-					"height": 35,
-					"dataSource": "vtHAlignIsCenter",
-					"radioGroup": "hAlignGroup",
-					"style": "toolbar",
-					"fontSize": 10,
-					"method": "ObjectMethods/HAlignCenterBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/Icons/center-green.png",
-					"iconFrames": 1,
-					"textPlacement": "center"
-				},
-				"HAlignRightBtn": {
-					"type": "radio",
-					"text": "",
-					"top": 558,
-					"left": 190,
-					"width": 35,
-					"height": 35,
-					"dataSource": "vtHAlignIsRight",
-					"radioGroup": "hAlignGroup",
-					"style": "toolbar",
-					"fontSize": 10,
-					"method": "ObjectMethods/HAlignRightBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/Icons/right-green.png",
-					"iconFrames": 1,
-					"textPlacement": "center"
-				},
-				"VerticalAlignRulerLabel": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelVerticalAlign",
-					"top": 512,
-					"left": 314,
-					"width": 83,
-					"height": 15,
-					"fontSize": 12,
-					"stroke": "#459E63",
-					"fontFamily": "Arial",
-					"fontWeight": "bold",
-					"textAlign": "center"
-				},
-				"VAlignTopBtn": {
-					"type": "radio",
-					"text": "",
-					"top": 539,
-					"left": 340,
-					"width": 35,
-					"height": 35,
-					"dataSource": "vtVAlignIsTop",
-					"radioGroup": "vAlignGroup",
-					"style": "toolbar",
-					"fontSize": 10,
-					"method": "ObjectMethods/VAlignTopBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"iconFrames": 1,
-					"icon": "/RESOURCES/Images/Icons/top-green.png",
-					"textPlacement": "center"
-				},
-				"VAlignMiddleBtn": {
-					"type": "radio",
-					"text": "",
-					"top": 573,
-					"left": 340,
-					"width": 35,
-					"height": 35,
-					"dataSource": "vtVAlignIsMiddle",
-					"radioGroup": "vAlignGroup",
-					"style": "toolbar",
-					"fontSize": 10,
-					"method": "ObjectMethods/VAlignMiddleBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"iconFrames": 1,
-					"icon": "/RESOURCES/Images/Icons/middle-green.png",
-					"textPlacement": "center"
-				},
-				"VAlignBottomBtn": {
-					"type": "radio",
-					"text": "",
-					"top": 607,
-					"left": 340,
-					"width": 35,
-					"height": 35,
-					"dataSource": "vtVAlignIsBottom",
-					"radioGroup": "vAlignGroup",
-					"style": "toolbar",
-					"fontSize": 10,
-					"method": "ObjectMethods/VAlignBottomBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"iconFrames": 1,
-					"icon": "/RESOURCES/Images/Icons/bottom-green.png",
-					"textPlacement": "center"
-				},
-				"AlignTitle": {
-					"type": "text",
-					"text": ":xliff:HDI2_AlignTitle",
-					"top": 125,
-					"left": 575,
-					"width": 120,
-					"height": 25,
-					"fontWeight": "bold",
-					"fontSize": 20,
-					"stroke": "#247CD3",
-					"fontFamily": "Arial"
-				},
-				"AlignDescription": {
-					"type": "text",
-					"text": ":xliff:HDI2_AlignDesc",
-					"top": 158,
-					"left": 575,
-					"width": 314,
-					"height": 64,
-					"fontFamily": "Arial",
-					"fontSize": 13,
-					"textAlign": "justify"
-				},
-				"InputTopRulerLabel": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelTop",
-					"top": 379,
-					"left": 519,
-					"width": 50,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"fontWeight": "bold"
-				},
-				"InputTopRuler": {
-					"type": "ruler",
-					"top": 402,
-					"left": 529,
-					"width": 100,
-					"height": 28,
-					"dataSource": "vtInputPaddingTop",
-					"min": 0,
-					"max": 100,
-					"step": 1,
-					"graduationStep": 1,
-					"showGraduations": false,
-					"labelsPlacement": "bottom",
-					"method": "ObjectMethods/InputPaddingRuler.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"InputTopValue": {
-					"type": "input",
-					"top": 393,
-					"left": 639,
-					"width": 40,
-					"height": 28,
-					"dataSource": "vtInputPaddingTop",
-					"textAlign": "center",
-					"fill": "#FFFFFF",
-					"stroke": "#247CD3",
-					"borderRadius": 4,
-					"fontSize": 11,
-					"fontFamily": "Arial",
-					"method": "ObjectMethods/InputPaddingRuler.4dm",
-					"events": [
-						"onDataChange"
-					],
-					"borderStyle": "solid",
-					"verticalAlign": "middle"
-				},
-				"InputRightRulerLabel": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelRight",
-					"top": 379,
-					"left": 721,
-					"width": 50,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"fontWeight": "bold"
-				},
-				"InputRightRuler": {
-					"type": "ruler",
-					"top": 402,
-					"left": 731,
-					"width": 100,
-					"height": 28,
-					"dataSource": "vtInputPaddingRight",
-					"min": 0,
-					"max": 100,
-					"step": 1,
-					"graduationStep": 1,
-					"showGraduations": false,
-					"labelsPlacement": "bottom",
-					"method": "ObjectMethods/InputPaddingRuler.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"InputRightValue": {
-					"type": "input",
-					"top": 393,
-					"left": 841,
-					"width": 40,
-					"height": 28,
-					"dataSource": "vtInputPaddingRight",
-					"textAlign": "center",
-					"fill": "#FFFFFF",
-					"stroke": "#247CD3",
-					"borderRadius": 4,
-					"fontSize": 11,
-					"fontFamily": "Arial",
-					"method": "ObjectMethods/InputPaddingRuler.4dm",
-					"events": [
-						"onDataChange"
-					],
-					"borderStyle": "solid",
-					"verticalAlign": "middle"
-				},
-				"InputBottomRulerLabel": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelBottom",
-					"top": 439,
-					"left": 519,
-					"width": 50,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"fontWeight": "bold"
-				},
-				"InputBottomRuler": {
-					"type": "ruler",
-					"top": 455,
-					"left": 529,
-					"width": 100,
-					"height": 28,
-					"dataSource": "vtInputPaddingBottom",
-					"min": 0,
-					"max": 100,
-					"step": 1,
-					"graduationStep": 1,
-					"showGraduations": false,
-					"labelsPlacement": "bottom",
-					"method": "ObjectMethods/InputPaddingRuler.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"InputBottomValue": {
-					"type": "input",
-					"top": 446,
-					"left": 639,
-					"width": 40,
-					"height": 28,
-					"dataSource": "vtInputPaddingBottom",
-					"textAlign": "center",
-					"fill": "#FFFFFF",
-					"stroke": "#247CD3",
-					"borderRadius": 4,
-					"fontSize": 11,
-					"fontFamily": "Arial",
-					"method": "ObjectMethods/InputPaddingRuler.4dm",
-					"events": [
-						"onDataChange"
-					],
-					"borderStyle": "solid",
-					"verticalAlign": "middle"
-				},
-				"InputLeftRulerLabel": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelLeft",
-					"top": 434,
-					"left": 721,
-					"width": 50,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"fontWeight": "bold"
-				},
-				"InputLeftRuler": {
-					"type": "ruler",
-					"top": 455,
-					"left": 731,
-					"width": 100,
-					"height": 28,
-					"dataSource": "vtInputPaddingLeft",
-					"min": 0,
-					"max": 100,
-					"step": 1,
-					"graduationStep": 1,
-					"showGraduations": false,
-					"labelsPlacement": "bottom",
-					"method": "ObjectMethods/InputPaddingRuler.4dm",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"InputLeftValue": {
-					"type": "input",
-					"top": 446,
-					"left": 841,
-					"width": 40,
-					"height": 28,
-					"dataSource": "vtInputPaddingLeft",
-					"textAlign": "center",
-					"fill": "#FFFFFF",
-					"stroke": "#247CD3",
-					"borderRadius": 4,
-					"fontSize": 11,
-					"fontFamily": "Arial",
-					"method": "ObjectMethods/InputPaddingRuler.4dm",
-					"events": [
-						"onDataChange"
-					],
-					"borderStyle": "solid",
-					"verticalAlign": "middle"
-				},
-				"InputHorizontalAlignRulerLabel": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelHorizontalAlign",
-					"top": 512,
-					"left": 560,
-					"width": 104,
-					"height": 14,
-					"fontSize": 12,
-					"stroke": "#247CD3",
-					"fontFamily": "Arial",
-					"fontWeight": "bold",
-					"textAlign": "center"
-				},
-				"InputHAlignLeftBtn": {
-					"type": "radio",
-					"text": "",
-					"top": 558,
-					"left": 558,
-					"width": 35,
-					"height": 35,
-					"dataSource": "vtInputHAlignIsLeft",
-					"radioGroup": "inputHAlignGroup",
-					"style": "toolbar",
-					"fontSize": 10,
-					"method": "ObjectMethods/InputHAlignLeftBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/Icons/left.png",
-					"iconFrames": 1
-				},
-				"InputHAlignCenterBtn": {
-					"type": "radio",
-					"text": "",
-					"top": 558,
-					"left": 593,
-					"width": 35,
-					"height": 35,
-					"dataSource": "vtInputHAlignIsCenter",
-					"radioGroup": "inputHAlignGroup",
-					"style": "toolbar",
-					"fontSize": 10,
-					"method": "ObjectMethods/InputHAlignCenterBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/Icons/center.png",
-					"iconFrames": 1
-				},
-				"InputHAlignRightBtn": {
-					"type": "radio",
-					"text": "",
-					"top": 558,
-					"left": 628,
-					"width": 35,
-					"height": 35,
-					"dataSource": "vtInputHAlignIsRight",
-					"radioGroup": "inputHAlignGroup",
-					"style": "toolbar",
-					"fontSize": 10,
-					"method": "ObjectMethods/InputHAlignRightBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/Images/Icons/right.png",
-					"iconFrames": 1
-				},
-				"InputVerticalAlignRulerLabel": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelVerticalAlign",
-					"top": 512,
-					"left": 753,
-					"width": 83,
-					"height": 15,
-					"fontSize": 12,
-					"stroke": "#247CD3",
-					"fontFamily": "Arial",
-					"fontWeight": "bold",
-					"textAlign": "center"
-				},
-				"InputVAlignTopBtn": {
-					"type": "radio",
-					"text": "",
-					"top": 539,
-					"left": 772,
-					"width": 35,
-					"height": 35,
-					"dataSource": "vtInputVAlignIsTop",
-					"radioGroup": "inputVAlignGroup",
-					"style": "toolbar",
-					"fontSize": 10,
-					"method": "ObjectMethods/InputVAlignTopBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"iconFrames": 1,
-					"icon": "/RESOURCES/Images/Icons/top.png"
-				},
-				"InputVAlignMiddleBtn": {
-					"type": "radio",
-					"text": "",
-					"top": 573,
-					"left": 772,
-					"width": 35,
-					"height": 35,
-					"dataSource": "vtInputVAlignIsMiddle",
-					"radioGroup": "inputVAlignGroup",
-					"style": "toolbar",
-					"fontSize": 10,
-					"method": "ObjectMethods/InputVAlignMiddleBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"iconFrames": 1,
-					"icon": "/RESOURCES/Images/Icons/middle.png"
-				},
-				"InputVAlignBottomBtn": {
-					"type": "radio",
-					"text": "",
-					"top": 607,
-					"left": 772,
-					"width": 35,
-					"height": 35,
-					"dataSource": "vtInputVAlignIsBottom",
-					"radioGroup": "inputVAlignGroup",
-					"style": "toolbar",
-					"fontSize": 10,
-					"method": "ObjectMethods/InputVAlignBottomBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"iconFrames": 1,
-					"icon": "/RESOURCES/Images/Icons/bottom.png"
-				},
-				"Line1": {
-					"type": "line",
-					"top": 518,
-					"left": 265,
-					"width": 0,
-					"height": 115,
-					"stroke": "#459E63"
-				},
-				"PaddingTopRulerLabel1": {
-					"type": "text",
-					"text": "0-100",
-					"top": 377,
-					"left": 196,
-					"width": 48,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"textAlign": "center",
-					"fontWeight": "bold"
-				},
-				"PaddingTopRulerLabel2": {
-					"type": "text",
-					"text": "0-100",
-					"top": 431,
-					"left": 196,
-					"width": 48,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"textAlign": "center",
-					"fontWeight": "bold"
-				},
-				"PaddingTopRulerLabel3": {
-					"type": "text",
-					"text": "0-100",
-					"top": 378,
-					"left": 398,
-					"width": 48,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"textAlign": "center",
-					"fontWeight": "bold"
-				},
-				"InputTopRulerLabel1": {
-					"type": "text",
-					"text": "0-100",
-					"top": 378,
-					"left": 635,
-					"width": 48,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"textAlign": "center",
-					"fontWeight": "bold"
-				},
-				"InputTopRulerLabel2": {
-					"type": "text",
-					"text": "0-100",
-					"top": 431,
-					"left": 635,
-					"width": 48,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"textAlign": "center",
-					"fontWeight": "bold"
-				},
-				"InputTopRulerLabel3": {
-					"type": "text",
-					"text": "0-100",
-					"top": 378,
-					"left": 837,
-					"width": 48,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"textAlign": "center",
-					"fontWeight": "bold"
-				},
-				"InputTopRulerLabel4": {
-					"type": "text",
-					"text": "0-100",
-					"top": 431,
-					"left": 837,
-					"width": 48,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"textAlign": "center",
-					"fontWeight": "bold"
-				},
-				"Line2": {
-					"type": "line",
-					"top": 518,
-					"left": 705,
-					"width": 0,
-					"height": 115,
-					"stroke": "#247CD3"
-				},
-				"Text": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelPaddingOptions",
-					"top": 358,
-					"left": 657,
-					"width": 106,
-					"height": 15,
-					"fontSize": 12,
-					"fontFamily": "Arial",
-					"stroke": "#247CD3",
-					"fontWeight": "bold"
-				},
-				"Text1": {
-					"type": "text",
-					"text": ":xliff:HDI2_LabelPaddingOptions",
-					"top": 358,
-					"left": 215,
-					"width": 100,
-					"height": 15,
-					"fontSize": 12,
-					"fontFamily": "Arial",
-					"stroke": "#459E63",
-					"fontWeight": "bold",
-					"textAlign": "center"
-				},
-				"JsonOval1": {
-					"type": "rectangle",
-					"top": 111,
-					"left": 80,
-					"width": 50,
-					"height": 50,
-					"borderRadius": 17,
-					"fill": "#459E63",
-					"stroke": "transparent"
-				},
-				"JsonNumber2": {
-					"type": "text",
-					"text": "Aa",
-					"top": 122,
-					"left": 82,
-					"width": 48,
-					"height": 30,
-					"fontSize": 24,
-					"fontWeight": "bold",
-					"textAlign": "center",
-					"stroke": "#FFFFFF",
-					"fontFamily": "Arial"
-				},
-				"CssOval1": {
-					"type": "rectangle",
-					"top": 110,
-					"left": 519,
-					"width": 50,
-					"height": 50,
-					"borderRadius": 17,
-					"fill": "#247CD3",
-					"stroke": "transparent"
-				},
-				"CssNumber1": {
-					"type": "text",
-					"text": "I",
-					"top": 120,
-					"left": 519,
-					"width": 50,
-					"height": 30,
-					"fontSize": 24,
-					"fontWeight": "bold",
-					"textAlign": "center",
-					"stroke": "#FFFFFF",
-					"fontFamily": "Arial"
-				},
-				"Line3": {
-					"type": "line",
-					"top": 391,
-					"left": 265,
-					"width": 0,
-					"height": 42,
-					"stroke": "#459E63"
-				},
-				"Line4": {
-					"type": "line",
-					"top": 391,
-					"left": 705,
-					"width": 0,
-					"height": 42,
-					"stroke": "#247CD3"
-				},
-				"PaddingTopRulerLabel4": {
-					"type": "text",
-					"text": "0-100",
-					"top": 431,
-					"left": 398,
-					"width": 48,
-					"height": 14,
-					"fontSize": 11,
-					"stroke": "#696969",
-					"fontFamily": "Arial",
-					"textAlign": "center",
-					"fontWeight": "bold"
-				},
-				"Line5": {
-					"type": "line",
-					"top": 499,
-					"left": 115,
-					"width": 300,
-					"height": 0,
-					"stroke": "#459E63"
-				},
-				"Line6": {
-					"type": "line",
-					"top": 499,
-					"left": 558,
-					"width": 300,
-					"height": 0,
-					"stroke": "#247CD3"
-				},
-				"Line7": {
-					"type": "line",
-					"top": 443,
-					"left": 265,
-					"width": 0,
-					"height": 42,
-					"stroke": "#459E63"
-				},
-				"Line8": {
-					"type": "line",
-					"top": 443,
-					"left": 705,
-					"width": 0,
-					"height": 42,
-					"stroke": "#247CD3"
-				},
-				"AlignInput": {
-					"type": "input",
-					"top": 271,
-					"left": 538,
-					"width": 332,
-					"height": 34,
-					"dataSource": "vtInputSample",
-					"placeholder": ":xliff:HDI2_TooltipSearch",
-					"fill": "#FFFFFF",
-					"fontFamily": "Arial",
-					"fontSize": 13,
-					"events": [
-						"onDataChange"
-					],
-					"borderStyle": "solid",
-					"textAlign": "justify",
-					"borderRadius": 20,
-					"borderColor": "#c0c0c0",
-					"multiline": "no",
-					"fontWeight": "bold"
-				},
-				"InputSearchBtn": {
-					"type": "button",
-					"top": 273,
-					"left": 529,
-					"width": 30,
-					"height": 30,
-					"style": "custom",
-					"tooltip": ":xliff:HDI2_TooltipSearch",
-					"icon": "/RESOURCES/Images/Icons/search.png",
-					"iconFrames": 1,
-					"method": "ObjectMethods/InputSearchBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"stroke": "#247CD3"
-				},
-				"InputClearBtn": {
-					"type": "button",
-					"top": 273,
-					"left": 851,
-					"width": 30,
-					"height": 30,
-					"style": "custom",
-					"tooltip": ":xliff:HDI2_TooltipClear",
-					"icon": "/RESOURCES/Images/Icons/close.png",
-					"iconFrames": 1,
-					"method": "ObjectMethods/InputClearBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"stroke": "#247CD3"
-				}
-			}
-		}
-	],
-	"$4d": {
-		"version": "1",
-		"kind": "form"
-	},
-	"editor": {
-		"activeView": "View 1",
-		"defaultView": "View 1",
-		"views": {
-			"View 1": {}
-		}
-	},
-	"geometryStamp": 1190
+  "destination": "detailScreen",
+  "windowMinWidth": 800,
+  "windowMaxWidth": 32000,
+  "windowMinHeight": 540,
+  "windowMaxHeight": 32000,
+  "width": 960,
+  "height": 720,
+  "menuBar": "Menu Bar #1",
+  "markerHeader": 15,
+  "markerBody": 200,
+  "markerBreak": 220,
+  "markerFooter": 240,
+  "events": [
+    "onLoad",
+    "onCloseBox"
+  ],
+  "method": "method.4dm",
+  "pageFormat": {
+    "paperName": "A4",
+    "paperWidth": "842pt",
+    "paperHeight": "595pt"
+  },
+  "pages": [
+    {
+      "objects": {
+        "Tab Control": {
+          "type": "tab",
+          "top": 20,
+          "left": 20,
+          "width": 920,
+          "height": 650,
+          "sizingX": "grow",
+          "sizingY": "grow",
+          "dataSource": "objTabs",
+          "dataSourceTypeHint": "object",
+          "action": "gotoPage",
+          "events": [
+            "onClick"
+          ]
+        },
+        "BtnOK": {
+          "type": "button",
+          "top": 680,
+          "left": 838,
+          "width": 102,
+          "sizingX": "move",
+          "sizingY": "move",
+          "tooltip": ":xliff:Tip_OK",
+          "shortcutKey": "[Enter]",
+          "text": ":xliff:HDI2_BtnOK",
+          "class": "default",
+          "defaultButton": true,
+          "events": [
+            "onClick"
+          ],
+          "method": "ObjectMethods/BtnOK.4dm"
+        },
+        "Line": {
+          "type": "line",
+          "top": 0,
+          "left": 480,
+          "height": 720,
+          "visibility": "hidden",
+          "sizingY": "grow",
+          "stroke": "#800080",
+          "strokeDashArray": "1 1"
+        }
+      }
+    },
+    {
+      "objects": {
+        "GreenShadow": {
+          "type": "rectangle",
+          "top": 138,
+          "left": 92,
+          "width": 770,
+          "height": 139,
+          "class": "card-green"
+        },
+        "GreenPanel": {
+          "type": "rectangle",
+          "top": 138,
+          "left": 99,
+          "width": 770,
+          "height": 139,
+          "class": "panel-green"
+        },
+        "BlueShadow": {
+          "type": "rectangle",
+          "top": 290,
+          "left": 92,
+          "width": 770,
+          "height": 139,
+          "class": "card-blue"
+        },
+        "BluePanel": {
+          "type": "rectangle",
+          "top": 290,
+          "left": 99,
+          "width": 770,
+          "height": 139,
+          "class": "panel-blue"
+        },
+        "PurpleShadow": {
+          "type": "rectangle",
+          "top": 442,
+          "left": 92,
+          "width": 770,
+          "height": 139,
+          "class": "card-purple"
+        },
+        "PurplePanel": {
+          "type": "rectangle",
+          "top": 442,
+          "left": 99,
+          "width": 770,
+          "height": 139,
+          "class": "panel-purple"
+        },
+        "InfoIcon1": {
+          "type": "picture",
+          "top": 162,
+          "left": 117,
+          "width": 83,
+          "height": 90,
+          "picture": "/RESOURCES/Images/Icons/Tab 1 - Icon 1.png",
+          "pictureFormat": "scaled"
+        },
+        "Title1": {
+          "type": "text",
+          "text": ":xliff:HDI2_Title1",
+          "top": 162,
+          "left": 220,
+          "width": 500,
+          "height": 22,
+          "fontFamily": "Arial",
+          "class": "card-title-green"
+        },
+        "Description1": {
+          "type": "text",
+          "text": ":xliff:HDI2_Desc1",
+          "top": 200,
+          "left": 220,
+          "width": 617,
+          "height": 60,
+          "fontFamily": "Arial",
+          "class": "card-desc"
+        },
+        "InfoIcon2": {
+          "type": "picture",
+          "top": 314,
+          "left": 117,
+          "width": 83,
+          "height": 90,
+          "picture": "/RESOURCES/Images/Icons/Tab 1 - Icon 2.png",
+          "pictureFormat": "scaled"
+        },
+        "Title2": {
+          "type": "text",
+          "text": ":xliff:HDI2_Title2",
+          "top": 314,
+          "left": 220,
+          "width": 500,
+          "height": 22,
+          "fontFamily": "Arial",
+          "class": "card-title-blue"
+        },
+        "Description2": {
+          "type": "text",
+          "text": ":xliff:HDI2_Desc2",
+          "top": 352,
+          "left": 220,
+          "width": 617,
+          "height": 60,
+          "fontFamily": "Arial",
+          "class": "card-desc"
+        },
+        "InfoIcon3": {
+          "type": "picture",
+          "top": 466,
+          "left": 117,
+          "width": 83,
+          "height": 90,
+          "picture": "/RESOURCES/Images/Icons/Tab 1 - Icon 3.png",
+          "pictureFormat": "scaled"
+        },
+        "Title3": {
+          "type": "text",
+          "text": ":xliff:HDI2_Title3",
+          "top": 466,
+          "left": 220,
+          "width": 500,
+          "height": 22,
+          "fontFamily": "Arial",
+          "class": "card-title-purple"
+        },
+        "Description3": {
+          "type": "text",
+          "text": ":xliff:HDI2_Desc3",
+          "top": 504,
+          "left": 220,
+          "width": 617,
+          "height": 60,
+          "fontFamily": "Arial",
+          "class": "card-desc"
+        }
+      }
+    },
+    {
+      "objects": {
+        "PageTitle2": {
+          "type": "text",
+          "text": ":xliff:HDI2_PageTitle2",
+          "top": 55,
+          "left": 88,
+          "width": 770,
+          "height": 36,
+          "fontFamily": "Arial",
+          "class": "page-title"
+        },
+        "JsonShadow": {
+          "type": "rectangle",
+          "top": 102,
+          "left": 31,
+          "width": 430,
+          "height": 260,
+          "class": "card-green"
+        },
+        "JsonPanel": {
+          "type": "rectangle",
+          "top": 102,
+          "left": 38,
+          "width": 430,
+          "height": 260,
+          "class": "panel-green"
+        },
+        "JsonOval": {
+          "type": "oval",
+          "top": 116,
+          "left": 63,
+          "width": 40,
+          "height": 39,
+          "class": "badge-green"
+        },
+        "JsonNumber": {
+          "type": "text",
+          "text": "1",
+          "top": 121,
+          "left": 63,
+          "width": 40,
+          "height": 29,
+          "fontFamily": "Arial",
+          "class": "badge-number"
+        },
+        "JsonTitle": {
+          "type": "text",
+          "text": "JSON",
+          "top": 126,
+          "left": 113,
+          "width": 287,
+          "height": 18,
+          "fontFamily": "Arial",
+          "class": "card-title-green"
+        },
+        "JsonDescription": {
+          "type": "text",
+          "text": ":xliff:HDI2_JsonDesc",
+          "top": 192,
+          "left": 63,
+          "width": 175,
+          "height": 120,
+          "fontFamily": "Arial",
+          "textAlign": "justify",
+          "class": "card-desc"
+        },
+        "CssShadow": {
+          "type": "rectangle",
+          "top": 102,
+          "left": 491,
+          "width": 430,
+          "height": 260,
+          "class": "card-blue"
+        },
+        "CssPanel": {
+          "type": "rectangle",
+          "top": 102,
+          "left": 498,
+          "width": 430,
+          "height": 260,
+          "class": "panel-blue"
+        },
+        "CssOval": {
+          "type": "oval",
+          "top": 116,
+          "left": 521,
+          "width": 40,
+          "height": 39,
+          "class": "badge-blue"
+        },
+        "CssNumber": {
+          "type": "text",
+          "text": "2",
+          "top": 121,
+          "left": 521,
+          "width": 40,
+          "height": 29,
+          "fontFamily": "Arial",
+          "class": "badge-number"
+        },
+        "CssTitle": {
+          "type": "text",
+          "text": "CSS",
+          "top": 126,
+          "left": 574,
+          "width": 287,
+          "height": 18,
+          "fontFamily": "Arial",
+          "class": "card-title-blue"
+        },
+        "CssDescription": {
+          "type": "text",
+          "text": ":xliff:HDI2_CssDesc",
+          "top": 204,
+          "left": 521,
+          "width": 175,
+          "height": 96,
+          "fontFamily": "Arial",
+          "textAlign": "justify",
+          "class": "card-desc"
+        },
+        "PropListShadow": {
+          "type": "rectangle",
+          "top": 375,
+          "left": 31,
+          "width": 430,
+          "height": 260,
+          "class": "card-purple"
+        },
+        "PropListPanel": {
+          "type": "rectangle",
+          "top": 375,
+          "left": 38,
+          "width": 430,
+          "height": 260,
+          "class": "panel-purple"
+        },
+        "PropListOval": {
+          "type": "oval",
+          "top": 389,
+          "left": 63,
+          "width": 40,
+          "height": 39,
+          "class": "badge-purple"
+        },
+        "PropListNumber": {
+          "type": "text",
+          "text": "3",
+          "top": 394,
+          "left": 63,
+          "width": 40,
+          "height": 29,
+          "fontFamily": "Arial",
+          "class": "badge-number"
+        },
+        "PropListTitle": {
+          "type": "text",
+          "text": ":xliff:HDI2_PropListTitle",
+          "top": 399,
+          "left": 113,
+          "width": 287,
+          "height": 18,
+          "fontFamily": "Arial",
+          "class": "card-title-purple"
+        },
+        "PropListDescription": {
+          "type": "text",
+          "text": ":xliff:HDI2_PropListDesc",
+          "top": 486,
+          "left": 63,
+          "width": 150,
+          "height": 80,
+          "fontFamily": "Arial",
+          "textAlign": "justify",
+          "class": "card-desc"
+        },
+        "CommandsShadow": {
+          "type": "rectangle",
+          "top": 375,
+          "left": 491,
+          "width": 430,
+          "height": 260,
+          "class": "card-orange"
+        },
+        "CommandsPanel": {
+          "type": "rectangle",
+          "top": 375,
+          "left": 498,
+          "width": 430,
+          "height": 260,
+          "class": "panel-orange"
+        },
+        "CommandsOval": {
+          "type": "oval",
+          "top": 389,
+          "left": 521,
+          "width": 40,
+          "height": 39,
+          "class": "badge-orange"
+        },
+        "CommandsNumber": {
+          "type": "text",
+          "text": "4",
+          "top": 394,
+          "left": 521,
+          "width": 40,
+          "height": 29,
+          "fontFamily": "Arial",
+          "class": "badge-number"
+        },
+        "CommandsTitle": {
+          "type": "text",
+          "text": ":xliff:HDI2_CommandsTitle",
+          "top": 399,
+          "left": 574,
+          "width": 287,
+          "height": 18,
+          "fontFamily": "Arial",
+          "class": "card-title-orange"
+        },
+        "CommandsDescription": {
+          "type": "text",
+          "text": ":xliff:HDI2_CommandsDesc",
+          "top": 470,
+          "left": 521,
+          "width": 150,
+          "height": 112,
+          "fontFamily": "Arial",
+          "textAlign": "justify",
+          "class": "card-desc"
+        },
+        "Static Picture3": {
+          "type": "picture",
+          "top": 152,
+          "left": 261,
+          "width": 200,
+          "height": 200,
+          "picture": "/RESOURCES/Images/Examples/json.png",
+          "pictureFormat": "scaled"
+        },
+        "Static Picture4": {
+          "type": "picture",
+          "top": 152,
+          "left": 716,
+          "width": 200,
+          "height": 200,
+          "picture": "/RESOURCES/Images/Examples/css.png",
+          "pictureFormat": "scaled"
+        },
+        "Static Picture5": {
+          "type": "picture",
+          "top": 399,
+          "left": 228,
+          "width": 250,
+          "height": 250,
+          "picture": "/RESOURCES/Images/Examples/propertylist.png",
+          "pictureFormat": "scaled"
+        },
+        "Static Picture6": {
+          "type": "picture",
+          "top": 401,
+          "left": 683,
+          "width": 250,
+          "height": 250,
+          "picture": "/RESOURCES/Images/Examples/commands.png",
+          "pictureFormat": "scaled"
+        }
+      }
+    },
+    {
+      "objects": {
+        "AlignShadow": {
+          "type": "rectangle",
+          "top": 100,
+          "left": 487,
+          "width": 420,
+          "height": 551,
+          "class": "card-blue"
+        },
+        "AlignPanel": {
+          "type": "rectangle",
+          "top": 100,
+          "left": 494,
+          "width": 420,
+          "height": 551,
+          "class": "panel-blue"
+        },
+        "PaddingShadow": {
+          "type": "rectangle",
+          "top": 100,
+          "left": 48,
+          "width": 420,
+          "height": 551,
+          "class": "card-green"
+        },
+        "PaddingPanel": {
+          "type": "rectangle",
+          "top": 100,
+          "left": 55,
+          "width": 420,
+          "height": 551,
+          "class": "panel-green"
+        },
+        "PageTitle": {
+          "type": "text",
+          "text": ":xliff:HDI2_PageTitle3",
+          "top": 55,
+          "left": 88,
+          "width": 770,
+          "height": 36,
+          "fontFamily": "Arial",
+          "class": "page-title-sm"
+        },
+        "PaddingTitle": {
+          "type": "text",
+          "text": ":xliff:HDI2_PaddingTitle",
+          "top": 125,
+          "left": 134,
+          "width": 120,
+          "height": 25,
+          "fontFamily": "Arial",
+          "class": "section-title-green"
+        },
+        "PaddingDescription": {
+          "type": "text",
+          "text": ":xliff:HDI2_PaddingDesc",
+          "top": 158,
+          "left": 134,
+          "width": 314,
+          "height": 64,
+          "fontFamily": "Arial",
+          "textAlign": "justify",
+          "class": "card-desc"
+        },
+        "StaticTextSample": {
+          "type": "text",
+          "text": ":xliff:HDI2_StaticTextSample",
+          "top": 238,
+          "left": 88,
+          "width": 354,
+          "height": 100,
+          "fontFamily": "Arial",
+          "class": "sample-text"
+        },
+        "PaddingTopRulerLabel": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelTop",
+          "top": 379,
+          "left": 80,
+          "width": 50,
+          "height": 14,
+          "fontFamily": "Arial",
+          "class": "ruler-label"
+        },
+        "PaddingTopRuler": {
+          "type": "ruler",
+          "top": 402,
+          "left": 90,
+          "width": 100,
+          "height": 28,
+          "dataSource": "vtPaddingTop",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "graduationStep": 1,
+          "showGraduations": false,
+          "labelsPlacement": "bottom",
+          "method": "ObjectMethods/PaddingTopRuler.4dm",
+          "events": [
+            "onDataChange"
+          ]
+        },
+        "PaddingTopValue": {
+          "type": "input",
+          "top": 393,
+          "left": 200,
+          "width": 40,
+          "height": 28,
+          "dataSource": "vtPaddingTop",
+          "fontFamily": "Arial",
+          "method": "ObjectMethods/PaddingTopRuler.4dm",
+          "events": [
+            "onDataChange"
+          ],
+          "verticalAlign": "middle",
+          "class": "value-green"
+        },
+        "PaddingRightRulerLabel": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelRight",
+          "top": 379,
+          "left": 282,
+          "width": 50,
+          "height": 14,
+          "fontFamily": "Arial",
+          "class": "ruler-label"
+        },
+        "PaddingRightRuler": {
+          "type": "ruler",
+          "top": 402,
+          "left": 292,
+          "width": 100,
+          "height": 28,
+          "dataSource": "vtPaddingRight",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "graduationStep": 1,
+          "showGraduations": false,
+          "labelsPlacement": "bottom",
+          "method": "ObjectMethods/PaddingTopRuler.4dm",
+          "events": [
+            "onDataChange"
+          ]
+        },
+        "PaddingRightValue": {
+          "type": "input",
+          "top": 393,
+          "left": 402,
+          "width": 40,
+          "height": 28,
+          "dataSource": "vtPaddingRight",
+          "fontFamily": "Arial",
+          "method": "ObjectMethods/PaddingTopRuler.4dm",
+          "events": [
+            "onDataChange"
+          ],
+          "verticalAlign": "middle",
+          "class": "value-green"
+        },
+        "PaddingBottomRulerLabel": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelBottom",
+          "top": 439,
+          "left": 80,
+          "width": 50,
+          "height": 14,
+          "fontFamily": "Arial",
+          "class": "ruler-label"
+        },
+        "PaddingBottomRuler": {
+          "type": "ruler",
+          "top": 455,
+          "left": 90,
+          "width": 100,
+          "height": 28,
+          "dataSource": "vtPaddingBottom",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "graduationStep": 1,
+          "showGraduations": false,
+          "labelsPlacement": "bottom",
+          "method": "ObjectMethods/PaddingTopRuler.4dm",
+          "events": [
+            "onDataChange"
+          ]
+        },
+        "PaddingBottomValue": {
+          "type": "input",
+          "top": 446,
+          "left": 200,
+          "width": 40,
+          "height": 28,
+          "dataSource": "vtPaddingBottom",
+          "fontFamily": "Arial",
+          "method": "ObjectMethods/PaddingTopRuler.4dm",
+          "events": [
+            "onDataChange"
+          ],
+          "verticalAlign": "middle",
+          "class": "value-green"
+        },
+        "PaddingLeftRulerLabel": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelLeft",
+          "top": 434,
+          "left": 282,
+          "width": 50,
+          "height": 14,
+          "fontFamily": "Arial",
+          "class": "ruler-label"
+        },
+        "PaddingLeftRuler": {
+          "type": "ruler",
+          "top": 455,
+          "left": 292,
+          "width": 100,
+          "height": 28,
+          "dataSource": "vtPaddingLeft",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "graduationStep": 1,
+          "showGraduations": false,
+          "labelsPlacement": "bottom",
+          "method": "ObjectMethods/PaddingTopRuler.4dm",
+          "events": [
+            "onDataChange"
+          ]
+        },
+        "PaddingLeftValue": {
+          "type": "input",
+          "top": 446,
+          "left": 402,
+          "width": 40,
+          "height": 28,
+          "dataSource": "vtPaddingLeft",
+          "fontFamily": "Arial",
+          "method": "ObjectMethods/PaddingTopRuler.4dm",
+          "events": [
+            "onDataChange"
+          ],
+          "verticalAlign": "middle",
+          "class": "value-green"
+        },
+        "HorizontalAlignRulerLabel": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelHorizontalAlign",
+          "top": 512,
+          "left": 121,
+          "width": 104,
+          "height": 15,
+          "fontFamily": "Arial",
+          "class": "ruler-label"
+        },
+        "HAlignLeftBtn": {
+          "type": "radio",
+          "text": "",
+          "top": 558,
+          "left": 120,
+          "width": 35,
+          "height": 35,
+          "dataSource": "vtHAlignIsLeft",
+          "radioGroup": "hAlignGroup",
+          "style": "toolbar",
+          "fontSize": 10,
+          "method": "ObjectMethods/HAlignLeftBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "icon": "/RESOURCES/Images/Icons/left-green.png",
+          "iconFrames": 1,
+          "textPlacement": "center"
+        },
+        "HAlignCenterBtn": {
+          "type": "radio",
+          "text": "",
+          "top": 558,
+          "left": 155,
+          "width": 35,
+          "height": 35,
+          "dataSource": "vtHAlignIsCenter",
+          "radioGroup": "hAlignGroup",
+          "style": "toolbar",
+          "fontSize": 10,
+          "method": "ObjectMethods/HAlignCenterBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "icon": "/RESOURCES/Images/Icons/center-green.png",
+          "iconFrames": 1,
+          "textPlacement": "center"
+        },
+        "HAlignRightBtn": {
+          "type": "radio",
+          "text": "",
+          "top": 558,
+          "left": 190,
+          "width": 35,
+          "height": 35,
+          "dataSource": "vtHAlignIsRight",
+          "radioGroup": "hAlignGroup",
+          "style": "toolbar",
+          "fontSize": 10,
+          "method": "ObjectMethods/HAlignRightBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "icon": "/RESOURCES/Images/Icons/right-green.png",
+          "iconFrames": 1,
+          "textPlacement": "center"
+        },
+        "VerticalAlignRulerLabel": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelVerticalAlign",
+          "top": 512,
+          "left": 314,
+          "width": 83,
+          "height": 15,
+          "fontFamily": "Arial",
+          "class": "ruler-label"
+        },
+        "VAlignTopBtn": {
+          "type": "radio",
+          "text": "",
+          "top": 539,
+          "left": 340,
+          "width": 35,
+          "height": 35,
+          "dataSource": "vtVAlignIsTop",
+          "radioGroup": "vAlignGroup",
+          "style": "toolbar",
+          "fontSize": 10,
+          "method": "ObjectMethods/VAlignTopBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "iconFrames": 1,
+          "icon": "/RESOURCES/Images/Icons/top-green.png",
+          "textPlacement": "center"
+        },
+        "VAlignMiddleBtn": {
+          "type": "radio",
+          "text": "",
+          "top": 573,
+          "left": 340,
+          "width": 35,
+          "height": 35,
+          "dataSource": "vtVAlignIsMiddle",
+          "radioGroup": "vAlignGroup",
+          "style": "toolbar",
+          "fontSize": 10,
+          "method": "ObjectMethods/VAlignMiddleBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "iconFrames": 1,
+          "icon": "/RESOURCES/Images/Icons/middle-green.png",
+          "textPlacement": "center"
+        },
+        "VAlignBottomBtn": {
+          "type": "radio",
+          "text": "",
+          "top": 607,
+          "left": 340,
+          "width": 35,
+          "height": 35,
+          "dataSource": "vtVAlignIsBottom",
+          "radioGroup": "vAlignGroup",
+          "style": "toolbar",
+          "fontSize": 10,
+          "method": "ObjectMethods/VAlignBottomBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "iconFrames": 1,
+          "icon": "/RESOURCES/Images/Icons/bottom-green.png",
+          "textPlacement": "center"
+        },
+        "AlignTitle": {
+          "type": "text",
+          "text": ":xliff:HDI2_AlignTitle",
+          "top": 125,
+          "left": 575,
+          "width": 120,
+          "height": 25,
+          "fontFamily": "Arial",
+          "class": "section-title-blue"
+        },
+        "AlignDescription": {
+          "type": "text",
+          "text": ":xliff:HDI2_AlignDesc",
+          "top": 158,
+          "left": 575,
+          "width": 314,
+          "height": 64,
+          "fontFamily": "Arial",
+          "textAlign": "justify",
+          "class": "card-desc"
+        },
+        "InputTopRulerLabel": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelTop",
+          "top": 379,
+          "left": 519,
+          "width": 50,
+          "height": 14,
+          "fontFamily": "Arial",
+          "class": "ruler-label"
+        },
+        "InputTopRuler": {
+          "type": "ruler",
+          "top": 402,
+          "left": 529,
+          "width": 100,
+          "height": 28,
+          "dataSource": "vtInputPaddingTop",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "graduationStep": 1,
+          "showGraduations": false,
+          "labelsPlacement": "bottom",
+          "method": "ObjectMethods/InputPaddingRuler.4dm",
+          "events": [
+            "onDataChange"
+          ]
+        },
+        "InputTopValue": {
+          "type": "input",
+          "top": 393,
+          "left": 639,
+          "width": 40,
+          "height": 28,
+          "dataSource": "vtInputPaddingTop",
+          "fontFamily": "Arial",
+          "method": "ObjectMethods/InputPaddingRuler.4dm",
+          "events": [
+            "onDataChange"
+          ],
+          "verticalAlign": "middle",
+          "class": "value-blue"
+        },
+        "InputRightRulerLabel": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelRight",
+          "top": 379,
+          "left": 721,
+          "width": 50,
+          "height": 14,
+          "fontFamily": "Arial",
+          "class": "ruler-label"
+        },
+        "InputRightRuler": {
+          "type": "ruler",
+          "top": 402,
+          "left": 731,
+          "width": 100,
+          "height": 28,
+          "dataSource": "vtInputPaddingRight",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "graduationStep": 1,
+          "showGraduations": false,
+          "labelsPlacement": "bottom",
+          "method": "ObjectMethods/InputPaddingRuler.4dm",
+          "events": [
+            "onDataChange"
+          ]
+        },
+        "InputRightValue": {
+          "type": "input",
+          "top": 393,
+          "left": 841,
+          "width": 40,
+          "height": 28,
+          "dataSource": "vtInputPaddingRight",
+          "fontFamily": "Arial",
+          "method": "ObjectMethods/InputPaddingRuler.4dm",
+          "events": [
+            "onDataChange"
+          ],
+          "verticalAlign": "middle",
+          "class": "value-blue"
+        },
+        "InputBottomRulerLabel": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelBottom",
+          "top": 439,
+          "left": 519,
+          "width": 50,
+          "height": 14,
+          "fontFamily": "Arial",
+          "class": "ruler-label"
+        },
+        "InputBottomRuler": {
+          "type": "ruler",
+          "top": 455,
+          "left": 529,
+          "width": 100,
+          "height": 28,
+          "dataSource": "vtInputPaddingBottom",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "graduationStep": 1,
+          "showGraduations": false,
+          "labelsPlacement": "bottom",
+          "method": "ObjectMethods/InputPaddingRuler.4dm",
+          "events": [
+            "onDataChange"
+          ]
+        },
+        "InputBottomValue": {
+          "type": "input",
+          "top": 446,
+          "left": 639,
+          "width": 40,
+          "height": 28,
+          "dataSource": "vtInputPaddingBottom",
+          "fontFamily": "Arial",
+          "method": "ObjectMethods/InputPaddingRuler.4dm",
+          "events": [
+            "onDataChange"
+          ],
+          "verticalAlign": "middle",
+          "class": "value-blue"
+        },
+        "InputLeftRulerLabel": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelLeft",
+          "top": 434,
+          "left": 721,
+          "width": 50,
+          "height": 14,
+          "fontFamily": "Arial",
+          "class": "ruler-label"
+        },
+        "InputLeftRuler": {
+          "type": "ruler",
+          "top": 455,
+          "left": 731,
+          "width": 100,
+          "height": 28,
+          "dataSource": "vtInputPaddingLeft",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "graduationStep": 1,
+          "showGraduations": false,
+          "labelsPlacement": "bottom",
+          "method": "ObjectMethods/InputPaddingRuler.4dm",
+          "events": [
+            "onDataChange"
+          ]
+        },
+        "InputLeftValue": {
+          "type": "input",
+          "top": 446,
+          "left": 841,
+          "width": 40,
+          "height": 28,
+          "dataSource": "vtInputPaddingLeft",
+          "fontFamily": "Arial",
+          "method": "ObjectMethods/InputPaddingRuler.4dm",
+          "events": [
+            "onDataChange"
+          ],
+          "verticalAlign": "middle",
+          "class": "value-blue"
+        },
+        "InputHorizontalAlignRulerLabel": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelHorizontalAlign",
+          "top": 512,
+          "left": 560,
+          "width": 104,
+          "height": 14,
+          "fontFamily": "Arial",
+          "class": "ruler-label"
+        },
+        "InputHAlignLeftBtn": {
+          "type": "radio",
+          "text": "",
+          "top": 558,
+          "left": 558,
+          "width": 35,
+          "height": 35,
+          "dataSource": "vtInputHAlignIsLeft",
+          "radioGroup": "inputHAlignGroup",
+          "style": "toolbar",
+          "fontSize": 10,
+          "method": "ObjectMethods/InputHAlignLeftBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "icon": "/RESOURCES/Images/Icons/left.png",
+          "iconFrames": 1
+        },
+        "InputHAlignCenterBtn": {
+          "type": "radio",
+          "text": "",
+          "top": 558,
+          "left": 593,
+          "width": 35,
+          "height": 35,
+          "dataSource": "vtInputHAlignIsCenter",
+          "radioGroup": "inputHAlignGroup",
+          "style": "toolbar",
+          "fontSize": 10,
+          "method": "ObjectMethods/InputHAlignCenterBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "icon": "/RESOURCES/Images/Icons/center.png",
+          "iconFrames": 1
+        },
+        "InputHAlignRightBtn": {
+          "type": "radio",
+          "text": "",
+          "top": 558,
+          "left": 628,
+          "width": 35,
+          "height": 35,
+          "dataSource": "vtInputHAlignIsRight",
+          "radioGroup": "inputHAlignGroup",
+          "style": "toolbar",
+          "fontSize": 10,
+          "method": "ObjectMethods/InputHAlignRightBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "icon": "/RESOURCES/Images/Icons/right.png",
+          "iconFrames": 1
+        },
+        "InputVerticalAlignRulerLabel": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelVerticalAlign",
+          "top": 512,
+          "left": 753,
+          "width": 83,
+          "height": 15,
+          "fontFamily": "Arial",
+          "class": "ruler-label"
+        },
+        "InputVAlignTopBtn": {
+          "type": "radio",
+          "text": "",
+          "top": 539,
+          "left": 772,
+          "width": 35,
+          "height": 35,
+          "dataSource": "vtInputVAlignIsTop",
+          "radioGroup": "inputVAlignGroup",
+          "style": "toolbar",
+          "fontSize": 10,
+          "method": "ObjectMethods/InputVAlignTopBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "iconFrames": 1,
+          "icon": "/RESOURCES/Images/Icons/top.png"
+        },
+        "InputVAlignMiddleBtn": {
+          "type": "radio",
+          "text": "",
+          "top": 573,
+          "left": 772,
+          "width": 35,
+          "height": 35,
+          "dataSource": "vtInputVAlignIsMiddle",
+          "radioGroup": "inputVAlignGroup",
+          "style": "toolbar",
+          "fontSize": 10,
+          "method": "ObjectMethods/InputVAlignMiddleBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "iconFrames": 1,
+          "icon": "/RESOURCES/Images/Icons/middle.png"
+        },
+        "InputVAlignBottomBtn": {
+          "type": "radio",
+          "text": "",
+          "top": 607,
+          "left": 772,
+          "width": 35,
+          "height": 35,
+          "dataSource": "vtInputVAlignIsBottom",
+          "radioGroup": "inputVAlignGroup",
+          "style": "toolbar",
+          "fontSize": 10,
+          "method": "ObjectMethods/InputVAlignBottomBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "iconFrames": 1,
+          "icon": "/RESOURCES/Images/Icons/bottom.png"
+        },
+        "Line1": {
+          "type": "line",
+          "top": 518,
+          "left": 265,
+          "width": 0,
+          "height": 115,
+          "class": "separator-green"
+        },
+        "PaddingTopRulerLabel1": {
+          "type": "text",
+          "text": "0-100",
+          "top": 377,
+          "left": 196,
+          "width": 48,
+          "height": 14,
+          "fontSize": 11,
+          "stroke": "#696969",
+          "fontFamily": "Arial",
+          "textAlign": "center",
+          "fontWeight": "bold"
+        },
+        "PaddingTopRulerLabel2": {
+          "type": "text",
+          "text": "0-100",
+          "top": 431,
+          "left": 196,
+          "width": 48,
+          "height": 14,
+          "fontSize": 11,
+          "stroke": "#696969",
+          "fontFamily": "Arial",
+          "textAlign": "center",
+          "fontWeight": "bold"
+        },
+        "PaddingTopRulerLabel3": {
+          "type": "text",
+          "text": "0-100",
+          "top": 378,
+          "left": 398,
+          "width": 48,
+          "height": 14,
+          "fontSize": 11,
+          "stroke": "#696969",
+          "fontFamily": "Arial",
+          "textAlign": "center",
+          "fontWeight": "bold"
+        },
+        "InputTopRulerLabel1": {
+          "type": "text",
+          "text": "0-100",
+          "top": 378,
+          "left": 635,
+          "width": 48,
+          "height": 14,
+          "fontSize": 11,
+          "stroke": "#696969",
+          "fontFamily": "Arial",
+          "textAlign": "center",
+          "fontWeight": "bold"
+        },
+        "InputTopRulerLabel2": {
+          "type": "text",
+          "text": "0-100",
+          "top": 431,
+          "left": 635,
+          "width": 48,
+          "height": 14,
+          "fontSize": 11,
+          "stroke": "#696969",
+          "fontFamily": "Arial",
+          "textAlign": "center",
+          "fontWeight": "bold"
+        },
+        "InputTopRulerLabel3": {
+          "type": "text",
+          "text": "0-100",
+          "top": 378,
+          "left": 837,
+          "width": 48,
+          "height": 14,
+          "fontSize": 11,
+          "stroke": "#696969",
+          "fontFamily": "Arial",
+          "textAlign": "center",
+          "fontWeight": "bold"
+        },
+        "InputTopRulerLabel4": {
+          "type": "text",
+          "text": "0-100",
+          "top": 431,
+          "left": 837,
+          "width": 48,
+          "height": 14,
+          "fontSize": 11,
+          "stroke": "#696969",
+          "fontFamily": "Arial",
+          "textAlign": "center",
+          "fontWeight": "bold"
+        },
+        "Line2": {
+          "type": "line",
+          "top": 518,
+          "left": 705,
+          "width": 0,
+          "height": 115,
+          "class": "separator-blue"
+        },
+        "Text": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelPaddingOptions",
+          "top": 358,
+          "left": 657,
+          "width": 106,
+          "height": 15,
+          "fontFamily": "Arial",
+          "class": "align-label-blue"
+        },
+        "Text1": {
+          "type": "text",
+          "text": ":xliff:HDI2_LabelPaddingOptions",
+          "top": 358,
+          "left": 215,
+          "width": 100,
+          "height": 15,
+          "fontFamily": "Arial",
+          "class": "align-label-green"
+        },
+        "JsonOval1": {
+          "type": "rectangle",
+          "top": 111,
+          "left": 80,
+          "width": 50,
+          "height": 50,
+          "borderRadius": 17,
+          "class": "badge-green"
+        },
+        "JsonNumber2": {
+          "type": "text",
+          "text": "Aa",
+          "top": 122,
+          "left": 82,
+          "width": 48,
+          "height": 30,
+          "fontSize": 24,
+          "fontWeight": "bold",
+          "textAlign": "center",
+          "stroke": "#FFFFFF",
+          "fontFamily": "Arial"
+        },
+        "CssOval1": {
+          "type": "rectangle",
+          "top": 110,
+          "left": 519,
+          "width": 50,
+          "height": 50,
+          "borderRadius": 17,
+          "class": "badge-blue"
+        },
+        "CssNumber1": {
+          "type": "text",
+          "text": "I",
+          "top": 120,
+          "left": 519,
+          "width": 50,
+          "height": 30,
+          "fontSize": 24,
+          "fontWeight": "bold",
+          "textAlign": "center",
+          "stroke": "#FFFFFF",
+          "fontFamily": "Arial"
+        },
+        "Line3": {
+          "type": "line",
+          "top": 391,
+          "left": 265,
+          "width": 0,
+          "height": 42,
+          "class": "separator-green"
+        },
+        "Line4": {
+          "type": "line",
+          "top": 391,
+          "left": 705,
+          "width": 0,
+          "height": 42,
+          "class": "separator-blue"
+        },
+        "PaddingTopRulerLabel4": {
+          "type": "text",
+          "text": "0-100",
+          "top": 431,
+          "left": 398,
+          "width": 48,
+          "height": 14,
+          "fontSize": 11,
+          "stroke": "#696969",
+          "fontFamily": "Arial",
+          "textAlign": "center",
+          "fontWeight": "bold"
+        },
+        "Line5": {
+          "type": "line",
+          "top": 499,
+          "left": 115,
+          "width": 300,
+          "height": 0,
+          "class": "separator-green"
+        },
+        "Line6": {
+          "type": "line",
+          "top": 499,
+          "left": 558,
+          "width": 300,
+          "height": 0,
+          "class": "separator-blue"
+        },
+        "Line7": {
+          "type": "line",
+          "top": 443,
+          "left": 265,
+          "width": 0,
+          "height": 42,
+          "class": "separator-green"
+        },
+        "Line8": {
+          "type": "line",
+          "top": 443,
+          "left": 705,
+          "width": 0,
+          "height": 42,
+          "class": "separator-blue"
+        },
+        "AlignInput": {
+          "type": "input",
+          "top": 271,
+          "left": 538,
+          "width": 332,
+          "height": 34,
+          "dataSource": "vtInputSample",
+          "placeholder": ":xliff:HDI2_TooltipSearch",
+          "fontFamily": "Arial",
+          "events": [
+            "onDataChange"
+          ],
+          "borderStyle": "solid",
+          "textAlign": "justify",
+          "borderRadius": 20,
+          "borderColor": "#c0c0c0",
+          "multiline": "no",
+          "class": "input-hero"
+        },
+        "InputSearchBtn": {
+          "type": "button",
+          "top": 273,
+          "left": 529,
+          "width": 30,
+          "height": 30,
+          "style": "custom",
+          "tooltip": ":xliff:HDI2_TooltipSearch",
+          "icon": "/RESOURCES/Images/Icons/search.png",
+          "iconFrames": 1,
+          "method": "ObjectMethods/InputSearchBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "stroke": "#247CD3"
+        },
+        "InputClearBtn": {
+          "type": "button",
+          "top": 273,
+          "left": 851,
+          "width": 30,
+          "height": 30,
+          "style": "custom",
+          "tooltip": ":xliff:HDI2_TooltipClear",
+          "icon": "/RESOURCES/Images/Icons/close.png",
+          "iconFrames": 1,
+          "method": "ObjectMethods/InputClearBtn.4dm",
+          "events": [
+            "onClick"
+          ],
+          "stroke": "#247CD3"
+        }
+      }
+    }
+  ],
+  "$4d": {
+    "version": "1",
+    "kind": "form"
+  },
+  "editor": {
+    "activeView": "View 1",
+    "defaultView": "View 1",
+    "views": {
+      "View 1": {}
+    }
+  },
+  "geometryStamp": 1190
 }
