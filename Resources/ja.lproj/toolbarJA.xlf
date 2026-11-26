@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="toolbar" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="TF_LabelPageNumber" resname="TF_LabelPageNumber">
+				<source>Page number:</source>
+				<target>ページ番号:</target>
+			</trans-unit>
+			<trans-unit id="TF_LabelTabTitle" resname="TF_LabelTabTitle">
+				<source>Tab Title:</source>
+				<target>タブタイトル:</target>
+			</trans-unit>
+			<trans-unit id="TF_LabelPage" resname="TF_LabelPage">
+				<source>Page:</source>
+				<target>ページ:</target>
+			</trans-unit>
+			<trans-unit id="TF_HeaderTitle" resname="TF_HeaderTitle">
+				<source>Title</source>
+				<target>タイトル</target>
+			</trans-unit>
+			<trans-unit id="TF_HeaderDescription" resname="TF_HeaderDescription">
+				<source>Description</source>
+				<target>説明</target>
+			</trans-unit>
+			<trans-unit id="Tip_FirstRecord" resname="Tip_FirstRecord">
+				<source>First Record</source>
+				<target>最初のレコード</target>
+			</trans-unit>
+			<trans-unit id="Tip_PreviousRecord" resname="Tip_PreviousRecord">
+				<source>Previous Record</source>
+				<target>前のレコード</target>
+			</trans-unit>
+			<trans-unit id="Tip_NextRecord" resname="Tip_NextRecord">
+				<source>Next Record</source>
+				<target>次のレコード</target>
+			</trans-unit>
+			<trans-unit id="Tip_LastRecord" resname="Tip_LastRecord">
+				<source>Last Record</source>
+				<target>最後のレコード</target>
+			</trans-unit>
+			<trans-unit id="Tip_DeleteRecord" resname="Tip_DeleteRecord">
+				<source>Delete Record</source>
+				<target>レコード削除</target>
+			</trans-unit>
+			<trans-unit id="Tip_AddRecord" resname="Tip_AddRecord">
+				<source>Add Record</source>
+				<target>レコード追加</target>
+			</trans-unit>
+			<trans-unit id="Tip_DeleteSelection" resname="Tip_DeleteSelection">
+				<source>Delete Selection</source>
+				<target>選択レコード削除</target>
+			</trans-unit>
+			<trans-unit id="Tip_ShowAll" resname="Tip_ShowAll">
+				<source>Show All</source>
+				<target>全レコード表示</target>
+			</trans-unit>
+			<trans-unit id="Tip_ShowSubset" resname="Tip_ShowSubset">
+				<source>Show Subset</source>
+				<target>選択レコード表示</target>
+			</trans-unit>
+			<trans-unit id="Tip_Query" resname="Tip_Query">
+				<source>Query</source>
+				<target>クエリ</target>
+			</trans-unit>
+			<trans-unit id="Tip_OrderBy" resname="Tip_OrderBy">
+				<source>Order By</source>
+				<target>並べ替え</target>
+			</trans-unit>
+			<trans-unit id="Tip_Cancel" resname="Tip_Cancel">
+				<source>Cancel</source>
+				<target>キャンセル</target>
+			</trans-unit>
+			<trans-unit id="Tip_OK" resname="Tip_OK">
+				<source>Accept</source>
+				<target>確定</target>
+			</trans-unit>
+			<trans-unit id="Tip_RecordNumber" resname="Tip_RecordNumber">
+				<source>Record Position within Selection</source>
+				<target>選択内のレコード位置</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

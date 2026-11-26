@@ -56,9 +56,7 @@
 					"left": 21,
 					"width": 48,
 					"height": 48,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/First Record"
-					},
+					"tooltip": ":xliff:Tip_FirstRecord",
 					"action": "firstRecord",
 					"rowCount": 4,
 					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
@@ -75,9 +73,7 @@
 					"left": 84,
 					"width": 48,
 					"height": 48,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Previous Record"
-					},
+					"tooltip": ":xliff:Tip_PreviousRecord",
 					"action": "previousRecord",
 					"rowCount": 4,
 					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
@@ -94,9 +90,7 @@
 					"left": 147,
 					"width": 48,
 					"height": 48,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Next Record"
-					},
+					"tooltip": ":xliff:Tip_NextRecord",
 					"action": "nextRecord",
 					"rowCount": 4,
 					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
@@ -113,9 +107,7 @@
 					"left": 210,
 					"width": 48,
 					"height": 48,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Last Record"
-					},
+					"tooltip": ":xliff:Tip_LastRecord",
 					"action": "lastRecord",
 					"rowCount": 4,
 					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
@@ -132,9 +124,7 @@
 					"left": 273,
 					"width": 48,
 					"height": 48,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Delete Record"
-					},
+					"tooltip": ":xliff:Tip_DeleteRecord",
 					"action": "deleteRecord",
 					"rowCount": 4,
 					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
@@ -151,9 +141,7 @@
 					"left": 336,
 					"width": 48,
 					"height": 48,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Cancel"
-					},
+					"tooltip": ":xliff:Tip_Cancel",
 					"action": "cancel",
 					"rowCount": 4,
 					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
@@ -170,9 +158,7 @@
 					"left": 399,
 					"width": 48,
 					"height": 48,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/OK"
-					},
+					"tooltip": ":xliff:Tip_OK",
 					"action": "accept",
 					"rowCount": 4,
 					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
@@ -242,7 +228,7 @@
 					"width": 150,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Page number:"
+					"text": ":xliff:TF_LabelPageNumber"
 				},
 				"Text1": {
 					"type": "text",
@@ -251,7 +237,7 @@
 					"width": 150,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Tab Title:"
+					"text": ":xliff:TF_LabelTabTitle"
 				},
 				"Description1": {
 					"type": "input",

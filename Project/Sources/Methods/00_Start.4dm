@@ -4,7 +4,7 @@
 var $title : Text
 var $window : Integer
 
-$title:="Adjust Vertical Alignment and Padding"+Char(Carriage return)+"in My Text Area and Input Objects"
+$title:=Localized string("HDI_Title")
 
 If (Count parameters=0)
 	
@@ -35,7 +35,7 @@ Else
 	
 	$options.title:=$title
 	$options.blog:="blog.4d.com"
-	$options.info:="Form Objects Feature"
+	$options.info:=Localized string("HDI_Info")
 	$options.minimumVersion:="2150"  // 2150 = 21 R5
 	
 	// $options.license:=4D View license  // IF ANY NEEDED
