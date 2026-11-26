@@ -62,7 +62,7 @@
 					"height": 20,
 					"action": "Accept",
 					"shortcutKey": "[Return]",
-					"text": "Demo",
+					"text": ":xliff:HDI_BtnDemo",
 					"class": "default1",
 					"focusable": false,
 					"defaultButton": true,
@@ -96,7 +96,7 @@
 					"width": 300,
 					"height": 17,
 					"stroke": "#696969",
-					"text": "{version} and above"
+					"text": ":xliff:HDI_VersionAndAbove"
 				},
 				"labelVersion": {
 					"type": "text",
@@ -107,7 +107,7 @@
 					"stroke": "automatic",
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Version:"
+					"text": ":xliff:HDI_LabelVersion"
 				},
 				"labelBlog": {
 					"type": "text",
@@ -118,7 +118,7 @@
 					"stroke": "automatic",
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Blog:"
+					"text": ":xliff:HDI_LabelBlog"
 				},
 				"labelInfo": {
 					"type": "text",
@@ -129,7 +129,7 @@
 					"stroke": "automatic",
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Info:"
+					"text": ":xliff:HDI_LabelInfo"
 				},
 				"txtBlog": {
 					"type": "input",
@@ -199,7 +199,7 @@
 					"stroke": "automatic",
 					"textAlign": "left",
 					"fontSize": 30,
-					"text": "How do I…",
+					"text": ":xliff:HDI_HowDoI",
 					"fontTheme": "normal"
 				},
 				"White90": {
@@ -221,7 +221,7 @@
 					"visibility": "hidden",
 					"textAlign": "center",
 					"fontTheme": "main",
-					"text": "Sorry, this \"How do I\" (HDI) example must\rbe used with a newer version of 4D\r({version} and above)"
+					"text": ":xliff:ErrorVersionMain"
 				},
 				"ErrorSubText": {
 					"type": "text",
@@ -231,7 +231,7 @@
 					"height": 80,
 					"visibility": "hidden",
 					"textAlign": "center",
-					"text": "Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality."
+					"text": ":xliff:ErrorVersionSub"
 				}
 			}
 		}

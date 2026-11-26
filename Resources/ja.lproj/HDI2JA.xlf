@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="HDI2" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="HDI2_Tab1" resname="HDI2_Tab1">
+				<source>Info</source>
+				<target>情報</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Tab2" resname="HDI2_Tab2">
+				<source>Setup Options</source>
+				<target>設定方法</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Tab3" resname="HDI2_Tab3">
+				<source>Try It!</source>
+				<target>試してみる</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnOK" resname="HDI2_BtnOK">
+				<source>OK</source>
+				<target>OK</target>
+			</trans-unit>
+			<trans-unit id="HDI2_TooltipOK" resname="HDI2_TooltipOK">
+				<source>Accept</source>
+				<target>確定</target>
+			</trans-unit>
+			<trans-unit id="HDI2_TooltipSearch" resname="HDI2_TooltipSearch">
+				<source>Search</source>
+				<target>検索</target>
+			</trans-unit>
+			<trans-unit id="HDI2_TooltipClear" resname="HDI2_TooltipClear">
+				<source>Clear</source>
+				<target>クリア</target>
+			</trans-unit>
+			<trans-unit id="HDI2_InputSearch" resname="HDI2_InputSearch">
+				<source>Search</source>
+				<target>検索</target>
+			</trans-unit>
+			<trans-unit id="HDI2_InputSample" resname="HDI2_InputSample">
+				<source>This text shows how padding and vertical alignment position it inside the input. Try adjusting the padding and alignment controls to see how the text moves within the input area as you change each value. Keep experimenting with different combinations of settings until you get a feel for how each one affects the final layout of the text.</source>
+				<target>このテキストは、パディングと垂直揃えによって入力内のどこに配置されるかを示しています。パディングと揃えの設定を調整すると、テキストが入力領域内でどう動くかがわかります。さまざまな組み合わせを試して、それぞれの設定がテキストのレイアウトにどう影響するかをつかんでください。</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Title1" resname="HDI2_Title1">
+				<source>WHAT IS NEW?</source>
+				<target>新機能</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Desc1" resname="HDI2_Desc1">
+				<source>Text areas and input objects can now use padding and vertical alignment. These properties give you precise control over the space around text and where text sits inside its area.</source>
+				<target>テキストエリアと入力オブジェクトでパディングと垂直揃えが使えるようになりました。これらのプロパティにより、テキストの周囲のスペースと、テキストが領域内のどこに置かれるかを正確に制御できます。</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Title2" resname="HDI2_Title2">
+				<source>WHAT DOES THIS FEATURE BRING?</source>
+				<target>この機能でできること</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Desc2" resname="HDI2_Desc2">
+				<source>Set independent padding values for each side of a text area or input, then align the text at the top, center, or bottom. This makes multi-line fields clearer and helps form layouts match their intended design.</source>
+				<target>テキストエリアや入力の各辺に個別のパディング値を設定し、テキストを上・中央・下に揃えられます。複数行フィールドがより読みやすくなり、フォームレイアウトを意図したデザインに合わせやすくなります。</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Title3" resname="HDI2_Title3">
+				<source>WHAT TO EXPECT IN THIS HDI?</source>
+				<target>この HDI について</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Desc3" resname="HDI2_Desc3">
+				<source>The following tabs show how padding and vertical alignment affect text areas and input objects, and provide examples you can play with to better visualize what's possible.</source>
+				<target>以降のタブでは、パディングと垂直揃えがテキストエリアと入力オブジェクトにどう影響するかを紹介します。実際に操作できる例もあり、何ができるのかを確かめられます。</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PageTitle2" resname="HDI2_PageTitle2">
+				<source>4 WAYS TO SET PADDING &amp; ALIGNMENT</source>
+				<target>パディングと揃えの 4 つの設定方法</target>
+			</trans-unit>
+			<trans-unit id="HDI2_JsonTitle" resname="HDI2_JsonTitle">
+				<source>JSON</source>
+				<target>JSON</target>
+			</trans-unit>
+			<trans-unit id="HDI2_JsonDesc" resname="HDI2_JsonDesc">
+				<source>Set the padding and verticalAlign properties directly in the form's JSON source, using "paddingLeft", "paddingRight", "paddingTop", "paddingBottom", and "verticalAlign" keys.</source>
+				<target>フォームの JSON ソースに直接 "paddingLeft"、"paddingRight"、"paddingTop"、"paddingBottom"、"verticalAlign" プロパティを設定します。</target>
+			</trans-unit>
+			<trans-unit id="HDI2_CssTitle" resname="HDI2_CssTitle">
+				<source>CSS</source>
+				<target>CSS</target>
+			</trans-unit>
+			<trans-unit id="HDI2_CssDesc" resname="HDI2_CssDesc">
+				<source>Apply padding and vertical-align through either 4D specific or standard CSS keys; that way, you can style your form the same way you would style a web page.</source>
+				<target>4D 固有のキーまたは標準的な CSS キーで padding と vertical-align を適用します。Web ページをスタイルするのと同じ要領でフォームをスタイルできます。</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PropListTitle" resname="HDI2_PropListTitle">
+				<source>PROPERTY LIST</source>
+				<target>プロパティリスト</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PropListDesc" resname="HDI2_PropListDesc">
+				<source>Use the Property List in the Form editor to set Padding and Vertical Alignment visually, without writing any code.</source>
+				<target>フォームエディターのプロパティリストを使えば、コードを書かずにパディングと垂直揃えを視覚的に設定できます。</target>
+			</trans-unit>
+			<trans-unit id="HDI2_CommandsTitle" resname="HDI2_CommandsTitle">
+				<source>COMMANDS</source>
+				<target>コマンド</target>
+			</trans-unit>
+			<trans-unit id="HDI2_CommandsDesc" resname="HDI2_CommandsDesc">
+				<source>Change padding and alignment at runtime with the  OBJECT SET VERTICAL ALIGNMENT command, and the new OBJECT SET PADDING command.</source>
+				<target>ランタイムでは OBJECT SET VERTICAL ALIGNMENT コマンドと、新しい OBJECT SET PADDING コマンドでパディングと揃えを変更します。</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PageTitle3" resname="HDI2_PageTitle3">
+				<source>PADDING &amp; VERTICAL ALIGNMENT</source>
+				<target>パディングと垂直揃え</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PaddingTitle" resname="HDI2_PaddingTitle">
+				<source>TEXT AREA</source>
+				<target>テキストエリア</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PaddingDesc" resname="HDI2_PaddingDesc">
+				<source>With padding and vertical alignment, you can now precisely position text within text area objects and adjust the spacing on all four sides.</source>
+				<target>パディングと垂直揃えにより、テキストエリアオブジェクト内のテキスト位置を正確に指定し、4 辺すべてのスペースを調整できるようになりました。</target>
+			</trans-unit>
+			<trans-unit id="HDI2_StaticTextSample" resname="HDI2_StaticTextSample">
+				<source>This text shows how padding and vertical alignment position it inside the text area.</source>
+				<target>このテキストは、パディングと垂直揃えによってテキストエリア内のどこに配置されるかを示しています。</target>
+			</trans-unit>
+			<trans-unit id="HDI2_AlignTitle" resname="HDI2_AlignTitle">
+				<source>INPUT</source>
+				<target>入力</target>
+			</trans-unit>
+			<trans-unit id="HDI2_AlignDesc" resname="HDI2_AlignDesc">
+				<source>Input objects also support padding and vertical alignment, useful for spacing text from the borders or making room for icons like the ones shown here.</source>
+				<target>入力オブジェクトもパディングと垂直揃えに対応しています。テキストを枠から離したり、ここに示すようなアイコンのスペースを確保したりするのに便利です。</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelTop" resname="HDI2_LabelTop">
+				<source>Top</source>
+				<target>上</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelRight" resname="HDI2_LabelRight">
+				<source>Right</source>
+				<target>右</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelBottom" resname="HDI2_LabelBottom">
+				<source>Bottom</source>
+				<target>下</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelLeft" resname="HDI2_LabelLeft">
+				<source>Left</source>
+				<target>左</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelHorizontalAlign" resname="HDI2_LabelHorizontalAlign">
+				<source>Horizontal Align</source>
+				<target>水平揃え</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelVerticalAlign" resname="HDI2_LabelVerticalAlign">
+				<source>Vertical Align</source>
+				<target>垂直揃え</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelPaddingOptions" resname="HDI2_LabelPaddingOptions">
+				<source>Padding Options</source>
+				<target>パディング設定</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

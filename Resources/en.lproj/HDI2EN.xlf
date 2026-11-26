@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="HDI2" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="HDI2_Tab1" resname="HDI2_Tab1">
+				<source>Info</source>
+				<target>Info</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Tab2" resname="HDI2_Tab2">
+				<source>Setup Options</source>
+				<target>Setup Options</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Tab3" resname="HDI2_Tab3">
+				<source>Try It!</source>
+				<target>Try It!</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnOK" resname="HDI2_BtnOK">
+				<source>OK</source>
+				<target>OK</target>
+			</trans-unit>
+			<trans-unit id="HDI2_TooltipOK" resname="HDI2_TooltipOK">
+				<source>Accept</source>
+				<target>Accept</target>
+			</trans-unit>
+			<trans-unit id="HDI2_TooltipSearch" resname="HDI2_TooltipSearch">
+				<source>Search</source>
+				<target>Search</target>
+			</trans-unit>
+			<trans-unit id="HDI2_TooltipClear" resname="HDI2_TooltipClear">
+				<source>Clear</source>
+				<target>Clear</target>
+			</trans-unit>
+			<trans-unit id="HDI2_InputSearch" resname="HDI2_InputSearch">
+				<source>Search</source>
+				<target>Search</target>
+			</trans-unit>
+			<trans-unit id="HDI2_InputSample" resname="HDI2_InputSample">
+				<source>This text shows how padding and vertical alignment position it inside the input. Try adjusting the padding and alignment controls to see how the text moves within the input area as you change each value. Keep experimenting with different combinations of settings until you get a feel for how each one affects the final layout of the text.</source>
+				<target>This text shows how padding and vertical alignment position it inside the input. Try adjusting the padding and alignment controls to see how the text moves within the input area as you change each value. Keep experimenting with different combinations of settings until you get a feel for how each one affects the final layout of the text.</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Title1" resname="HDI2_Title1">
+				<source>WHAT IS NEW?</source>
+				<target>WHAT IS NEW?</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Desc1" resname="HDI2_Desc1">
+				<source>Text areas and input objects can now use padding and vertical alignment. These properties give you precise control over the space around text and where text sits inside its area.</source>
+				<target>Text areas and input objects can now use padding and vertical alignment. These properties give you precise control over the space around text and where text sits inside its area.</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Title2" resname="HDI2_Title2">
+				<source>WHAT DOES THIS FEATURE BRING?</source>
+				<target>WHAT DOES THIS FEATURE BRING?</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Desc2" resname="HDI2_Desc2">
+				<source>Set independent padding values for each side of a text area or input, then align the text at the top, center, or bottom. This makes multi-line fields clearer and helps form layouts match their intended design.</source>
+				<target>Set independent padding values for each side of a text area or input, then align the text at the top, center, or bottom. This makes multi-line fields clearer and helps form layouts match their intended design.</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Title3" resname="HDI2_Title3">
+				<source>WHAT TO EXPECT IN THIS HDI?</source>
+				<target>WHAT TO EXPECT IN THIS HDI?</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Desc3" resname="HDI2_Desc3">
+				<source>The following tabs show how padding and vertical alignment affect text areas and input objects, and provide examples you can play with to better visualize what's possible.</source>
+				<target>The following tabs show how padding and vertical alignment affect text areas and input objects, and provide examples you can play with to better visualize what's possible.</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PageTitle2" resname="HDI2_PageTitle2">
+				<source>4 WAYS TO SET PADDING &amp; ALIGNMENT</source>
+				<target>4 WAYS TO SET PADDING &amp; ALIGNMENT</target>
+			</trans-unit>
+			<trans-unit id="HDI2_JsonTitle" resname="HDI2_JsonTitle">
+				<source>JSON</source>
+				<target>JSON</target>
+			</trans-unit>
+			<trans-unit id="HDI2_JsonDesc" resname="HDI2_JsonDesc">
+				<source>Set the padding and verticalAlign properties directly in the form's JSON source, using "paddingLeft", "paddingRight", "paddingTop", "paddingBottom", and "verticalAlign" keys.</source>
+				<target>Set the padding and verticalAlign properties directly in the form's JSON source, using "paddingLeft", "paddingRight", "paddingTop", "paddingBottom", and "verticalAlign" keys.</target>
+			</trans-unit>
+			<trans-unit id="HDI2_CssTitle" resname="HDI2_CssTitle">
+				<source>CSS</source>
+				<target>CSS</target>
+			</trans-unit>
+			<trans-unit id="HDI2_CssDesc" resname="HDI2_CssDesc">
+				<source>Apply padding and vertical-align through either 4D specific or standard CSS keys; that way, you can style your form the same way you would style a web page.</source>
+				<target>Apply padding and vertical-align through either 4D specific or standard CSS keys; that way, you can style your form the same way you would style a web page.</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PropListTitle" resname="HDI2_PropListTitle">
+				<source>PROPERTY LIST</source>
+				<target>PROPERTY LIST</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PropListDesc" resname="HDI2_PropListDesc">
+				<source>Use the Property List in the Form editor to set Padding and Vertical Alignment visually, without writing any code.</source>
+				<target>Use the Property List in the Form editor to set Padding and Vertical Alignment visually, without writing any code.</target>
+			</trans-unit>
+			<trans-unit id="HDI2_CommandsTitle" resname="HDI2_CommandsTitle">
+				<source>COMMANDS</source>
+				<target>COMMANDS</target>
+			</trans-unit>
+			<trans-unit id="HDI2_CommandsDesc" resname="HDI2_CommandsDesc">
+				<source>Change padding and alignment at runtime with the  OBJECT SET VERTICAL ALIGNMENT command, and the new OBJECT SET PADDING command.</source>
+				<target>Change padding and alignment at runtime with the  OBJECT SET VERTICAL ALIGNMENT command, and the new OBJECT SET PADDING command.</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PageTitle3" resname="HDI2_PageTitle3">
+				<source>PADDING &amp; VERTICAL ALIGNMENT</source>
+				<target>PADDING &amp; VERTICAL ALIGNMENT</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PaddingTitle" resname="HDI2_PaddingTitle">
+				<source>TEXT AREA</source>
+				<target>TEXT AREA</target>
+			</trans-unit>
+			<trans-unit id="HDI2_PaddingDesc" resname="HDI2_PaddingDesc">
+				<source>With padding and vertical alignment, you can now precisely position text within text area objects and adjust the spacing on all four sides.</source>
+				<target>With padding and vertical alignment, you can now precisely position text within text area objects and adjust the spacing on all four sides.</target>
+			</trans-unit>
+			<trans-unit id="HDI2_StaticTextSample" resname="HDI2_StaticTextSample">
+				<source>This text shows how padding and vertical alignment position it inside the text area.</source>
+				<target>This text shows how padding and vertical alignment position it inside the text area.</target>
+			</trans-unit>
+			<trans-unit id="HDI2_AlignTitle" resname="HDI2_AlignTitle">
+				<source>INPUT</source>
+				<target>INPUT</target>
+			</trans-unit>
+			<trans-unit id="HDI2_AlignDesc" resname="HDI2_AlignDesc">
+				<source>Input objects also support padding and vertical alignment, useful for spacing text from the borders or making room for icons like the ones shown here.</source>
+				<target>Input objects also support padding and vertical alignment, useful for spacing text from the borders or making room for icons like the ones shown here.</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelTop" resname="HDI2_LabelTop">
+				<source>Top</source>
+				<target>Top</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelRight" resname="HDI2_LabelRight">
+				<source>Right</source>
+				<target>Right</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelBottom" resname="HDI2_LabelBottom">
+				<source>Bottom</source>
+				<target>Bottom</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelLeft" resname="HDI2_LabelLeft">
+				<source>Left</source>
+				<target>Left</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelHorizontalAlign" resname="HDI2_LabelHorizontalAlign">
+				<source>Horizontal Align</source>
+				<target>Horizontal Align</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelVerticalAlign" resname="HDI2_LabelVerticalAlign">
+				<source>Vertical Align</source>
+				<target>Vertical Align</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelPaddingOptions" resname="HDI2_LabelPaddingOptions">
+				<source>Padding Options</source>
+				<target>Padding Options</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
