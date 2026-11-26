@@ -1,4 +1,4 @@
-var $version; $maintext; $subtext; $r; $format : Text
+var $version; $maintext; $r; $format : Text
 var $width; $height; $shift : Integer
 
 Case of 
@@ -68,34 +68,4 @@ Case of
 		End if 
 		
 		
-		If (Form:C1466.license#Null:C1517) & (Form:C1466.quit=False:C215)
-			
-			If (Not:C34(Is license available:C714(Form:C1466.license)))
-				
-				Form:C1466.quit:=True:C214
-				OBJECT SET TITLE:C194(*; "BtnDemo"; Localized string("BtnClose"))
-				
-				Case of 
-						
-					: (Form:C1466.license=4D View license:K44:4)
-						$maintext:=Localized string("ErrorViewProMain")
-						$subtext:=Localized string("ErrorViewProSub")
-						
-					: (Form:C1466.license=4D Write license:K44:2)
-						$maintext:=Localized string("ErrorWriteProMain")
-						$subtext:=Localized string("ErrorWriteProSub")
-						
-				End case 
-				
-				OBJECT SET TITLE:C194(*; "ErrorMainText"; $maintext)
-				OBJECT SET TITLE:C194(*; "ErrorSubText"; $subtext)
-				
-				OBJECT SET VISIBLE:C603(*; "ErrorMainText"; True:C214)
-				OBJECT SET VISIBLE:C603(*; "ErrorSubText"; True:C214)
-				OBJECT SET VISIBLE:C603(*; "White90"; True:C214)
-				
-			End if 
-			
-		End if 
-		
-End case 
+	End case 
